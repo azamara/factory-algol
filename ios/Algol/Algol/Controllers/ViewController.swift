@@ -8,29 +8,15 @@
 
 import UIKit
 import Alamofire
-import Argo
-import Curry
-
-// Argo
-struct User {
-    let origin: String
-    let url: String
-    let args: String
-}
-
-extension User: Decodable {
-    static func decode(j: JSON) -> Decoded<User> {
-        return curry(User.init)
-            <^> j <| "origin"
-            <*> j <| "url"
-            <*> j <| ["args", "foo"] // json["args"]["foo"]
-    }
-}
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-
+    @IBOutlet weak var homeLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var dustLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,38 +27,39 @@ class ViewController: UIViewController {
 
         queue.tasks +=~ {
             print(1)
+            SwaggerClientAPI.HomeAPI.homeGet(location: Double(2)).execute { (response, error) in
+                if response!.statusCode == 200,
+                    let home: Home = response!.body as Home {
+                        self.homeLabel!.text = "\(home.home_id!)"
+                        self.temperatureLabel!.text = "\(home.temperature!)º"
+                        self.humidityLabel!.text = "\(home.humidity!)%"
+                        self.dustLabel!.text = "\(home.dust!)"
+                }
+            }
         }
 
         queue.tasks +=! {
             print(2)
         }
 
-        print(3)
         queue.run()
 
-        print(4)
         
         
         // Alamofire
-        Alamofire.request(.GET, "http://httpbin.org/get")
+        /*
         Alamofire.request(.GET, "http://httpbin.org/get", parameters: ["foo": "bar"])
             .responseJSON { response in
+                print(response)
                 print(response.request)  // original URL request
                 print(response.response) // URL response
                 print(response.data)     // server data
                 print(response.result)   // result of response serialization
-                
                 if let json = response.result.value {
                     print("JSON: \(json)")
-                    let user: User? = decode(json)
-                    print("User: \(user)")
-                    print("User: \(user?.origin)")
                 }
         }
-        
-        // Wherever you receive JSON data:
-        
-        
+        */
 
         // Do any additional setup after loading the view, typically from a nib.
     }
