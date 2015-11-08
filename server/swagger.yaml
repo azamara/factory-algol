@@ -1,0 +1,80 @@
+# this is an example of the Uber API
+# as a demonstration of an API spec in YAML
+swagger: '2.0'
+info:
+  title: Summer API
+  description: Move your app forward with the Uber API
+  version: "1.0.0"
+# the domain of the service
+host: api.jnw.io
+# array of all schemes that your API supports
+schemes:
+  - http
+# will be prefixed to all paths
+basePath: /v1/summer
+produces:
+  - application/json
+paths:
+  /home:
+    get:
+      summary: Home Information
+      description: |
+        The Products endpoint returns information about the *Uber* products
+        offered at a given location. The response includes the display name
+        and other details about each product, and lists the products in the
+        proper display order.
+      parameters:
+        - name: location
+          in: query
+          description: home id
+          required: true
+          type: number
+          format: double
+      tags:
+        - Home
+      responses:
+        200:
+          description: Home information
+          schema:
+              $ref: '#/definitions/Home'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Home:
+    type: object
+    properties:
+      home_id:
+        type: number
+        description: Unique identifier
+      humidity:
+        type: number
+        format: double
+        description: Humidity of home.
+      temperature:
+        type: number
+        format: double  
+        description: Temperature of home.
+      sound:
+        type: number
+        format: double
+        description: Noise of home.
+      vibration:
+        type: number
+        format: double
+        description: Vibration of home.
+      dust:
+        type: number
+        format: double
+        description: Dust of home.
+  Error:
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
+      fields:
+        type: string
+
