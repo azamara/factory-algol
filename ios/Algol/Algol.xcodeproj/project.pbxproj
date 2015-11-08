@@ -7,22 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00EEE975FDBC3377F71B70F2 /* Pods_AlgolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9D7B4803EBA29C21666A70 /* Pods_AlgolUITests.framework */; };
-		0768275A1BEF15A9004CB641 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076827531BEF15A9004CB641 /* Alamofire.framework */; };
-		0768275B1BEF15A9004CB641 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076827541BEF15A9004CB641 /* Argo.framework */; };
-		0768275C1BEF15A9004CB641 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076827551BEF15A9004CB641 /* Nimble.framework */; };
-		0768275D1BEF15A9004CB641 /* Pods_AlgolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076827561BEF15A9004CB641 /* Pods_AlgolTests.framework */; };
-		0768275E1BEF15A9004CB641 /* Pods_AlgolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076827571BEF15A9004CB641 /* Pods_AlgolUITests.framework */; };
-		0768275F1BEF15A9004CB641 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076827581BEF15A9004CB641 /* Quick.framework */; };
-		076827601BEF15A9004CB641 /* TaskQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076827591BEF15A9004CB641 /* TaskQueue.framework */; };
 		07A0022B1BEF0EFF002E687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0022A1BEF0EFF002E687F /* AppDelegate.swift */; };
-		07A002331BEF0EFF002E687F /* Algol.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07A002311BEF0EFF002E687F /* Algol.xcdatamodeld */; };
 		07A002351BEF0EFF002E687F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A002341BEF0EFF002E687F /* Assets.xcassets */; };
 		07A002431BEF0EFF002E687F /* AlgolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A002421BEF0EFF002E687F /* AlgolTests.swift */; };
 		07A0024E1BEF0EFF002E687F /* AlgolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0024D1BEF0EFF002E687F /* AlgolUITests.swift */; };
-		9665EB9B228D0DAB033FFB8B /* Pods_AlgolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BA4B6F8509F3ED81FAF832 /* Pods_AlgolTests.framework */; };
-		C7B6F0198B4644305C43DFDC /* Pods_Algol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245AD8BDEA7792B1AB1329C6 /* Pods_Algol.framework */; };
+		07EF442B1BEF4D4700E8190F /* Swaggers in Resources */ = {isa = PBXBuildFile; fileRef = 07EF442A1BEF4D4700E8190F /* Swaggers */; };
+		AB25573037B6781D4A999010 /* Pods_Algol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB71B11081CFCE13EB2093B /* Pods_Algol.framework */; };
+		E0F5925C9E1B99BE56342C84 /* Algol.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0F59912576411BE567920D4 /* Algol.xcdatamodeld */; };
+		E0F5944A99454FEE8E6E26FB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E0F59B295B50999890EC82F6 /* Podfile */; };
 		E0F59765BE21959891AC86FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F599215FB133E2ECB0D0A5 /* Main.storyboard */; };
+		E0F59AC8E80C47561F25D890 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F59D7204EC78392607C767 /* TaskQueue.swift */; };
 		E0F59E0047F6FDEB74B47B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F59A174EDF0041A5389369 /* LaunchScreen.storyboard */; };
 		E0F59E3D6E9BD732DB7850F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F59C75D585148FE6F20250 /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,16 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		076827531BEF15A9004CB641 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/azamara/Development/workspace/william/factory-algol/ios/Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<absolute>"; };
-		076827541BEF15A9004CB641 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = "/Users/azamara/Development/workspace/william/factory-algol/ios/Pods/../build/Debug-iphoneos/Argo.framework"; sourceTree = "<absolute>"; };
-		076827551BEF15A9004CB641 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "/Users/azamara/Development/workspace/william/factory-algol/ios/Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<absolute>"; };
-		076827561BEF15A9004CB641 /* Pods_AlgolTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_AlgolTests.framework; path = "/Users/azamara/Development/workspace/william/factory-algol/ios/Pods/../build/Debug-iphoneos/Pods_AlgolTests.framework"; sourceTree = "<absolute>"; };
-		076827571BEF15A9004CB641 /* Pods_AlgolUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_AlgolUITests.framework; path = "/Users/azamara/Development/workspace/william/factory-algol/ios/Pods/../build/Debug-iphoneos/Pods_AlgolUITests.framework"; sourceTree = "<absolute>"; };
-		076827581BEF15A9004CB641 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "/Users/azamara/Development/workspace/william/factory-algol/ios/Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<absolute>"; };
-		076827591BEF15A9004CB641 /* TaskQueue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TaskQueue.framework; path = "/Users/azamara/Development/workspace/william/factory-algol/ios/Pods/../build/Debug-iphoneos/TaskQueue.framework"; sourceTree = "<absolute>"; };
 		07A002271BEF0EFF002E687F /* Algol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A0022A1BEF0EFF002E687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07A002321BEF0EFF002E687F /* Algol.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Algol.xcdatamodel; sourceTree = "<group>"; };
 		07A002341BEF0EFF002E687F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Support Files/Assets.xcassets"; sourceTree = "<group>"; };
 		07A002391BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07A0023E1BEF0EFF002E687F /* AlgolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,18 +49,16 @@
 		07A002491BEF0EFF002E687F /* AlgolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A0024D1BEF0EFF002E687F /* AlgolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgolUITests.swift; sourceTree = "<group>"; };
 		07A0024F1BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		119CCB64BA72FF0B442FF264 /* Pods-AlgolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AlgolTests/Pods-AlgolTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1D0853574221DA7FE145B66A /* Pods-AlgolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		245AD8BDEA7792B1AB1329C6 /* Pods_Algol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BB3DC354D6602024D06E8EB /* Pods-AlgolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4E9D7B4803EBA29C21666A70 /* Pods_AlgolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlgolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75BA4B6F8509F3ED81FAF832 /* Pods_AlgolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlgolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3644A52867A9E3694171C92 /* Pods-Algol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algol.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Algol/Pods-Algol.debug.xcconfig"; sourceTree = "<group>"; };
-		C8C0E5E2770D7913A5ED221B /* Pods-Algol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algol.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Algol/Pods-Algol.release.xcconfig"; sourceTree = "<group>"; };
-		D515BDBEB8CEB4DE7E7FF54E /* Pods-AlgolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AlgolTests/Pods-AlgolTests.release.xcconfig"; sourceTree = "<group>"; };
+		07EF442A1BEF4D4700E8190F /* Swaggers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Swaggers; sourceTree = "<group>"; };
+		8C4DAE2951002A0B50BF0543 /* Pods-Algol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algol.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algol/Pods-Algol.release.xcconfig"; sourceTree = "<group>"; };
+		B0F3B1C504A84B004D2B1047 /* Pods-Algol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algol.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Algol/Pods-Algol.debug.xcconfig"; sourceTree = "<group>"; };
 		E0F59671B7539C5E545BCA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Algol/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		E0F59784D96E8BCB731697FE /* Algol.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Algol.xcdatamodel; sourceTree = "<group>"; };
 		E0F59848BA5019301B9D7689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Algol/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		E0F59B295B50999890EC82F6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E0F59C75D585148FE6F20250 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0F59D7204EC78392607C767 /* TaskQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskQueue.swift; sourceTree = "<group>"; };
+		FCB71B11081CFCE13EB2093B /* Pods_Algol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0768275A1BEF15A9004CB641 /* Alamofire.framework in Frameworks */,
-				0768275B1BEF15A9004CB641 /* Argo.framework in Frameworks */,
-				0768275C1BEF15A9004CB641 /* Nimble.framework in Frameworks */,
-				0768275D1BEF15A9004CB641 /* Pods_AlgolTests.framework in Frameworks */,
-				0768275E1BEF15A9004CB641 /* Pods_AlgolUITests.framework in Frameworks */,
-				0768275F1BEF15A9004CB641 /* Quick.framework in Frameworks */,
-				076827601BEF15A9004CB641 /* TaskQueue.framework in Frameworks */,
-				C7B6F0198B4644305C43DFDC /* Pods_Algol.framework in Frameworks */,
+				AB25573037B6781D4A999010 /* Pods_Algol.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9665EB9B228D0DAB033FFB8B /* Pods_AlgolTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00EEE975FDBC3377F71B70F2 /* Pods_AlgolUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +95,7 @@
 				07A0024C1BEF0EFF002E687F /* AlgolUITests */,
 				07A002281BEF0EFF002E687F /* Products */,
 				75098898BA8CAED9E10EE270 /* Pods */,
-				8BEB73643BECA404EE9BAD11 /* Frameworks */,
+				7D444BD544FEE85F1C81A6BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,15 +112,17 @@
 		07A002291BEF0EFF002E687F /* Algol */ = {
 			isa = PBXGroup;
 			children = (
+				07EF442A1BEF4D4700E8190F /* Swaggers */,
 				07A0022A1BEF0EFF002E687F /* AppDelegate.swift */,
 				07A002341BEF0EFF002E687F /* Assets.xcassets */,
 				07A002391BEF0EFF002E687F /* Info.plist */,
-				07A002311BEF0EFF002E687F /* Algol.xcdatamodeld */,
 				E0F59CF4FA095B8E3AEC294F /* Views */,
 				E0F590DDF110C8A4B691112A /* Services */,
 				E0F5986E2F455A01716BBAD1 /* Models */,
 				E0F5982F68BEA03D9BE89E96 /* Controllers */,
 				E0F593468F05F9240D864386 /* Support Files */,
+				E0F59FF5BB26EC1D15C538E3 /* Libs */,
+				E0F59912576411BE567920D4 /* Algol.xcdatamodeld */,
 			);
 			path = Algol;
 			sourceTree = "<group>";
@@ -171,29 +148,17 @@
 		75098898BA8CAED9E10EE270 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C3644A52867A9E3694171C92 /* Pods-Algol.debug.xcconfig */,
-				C8C0E5E2770D7913A5ED221B /* Pods-Algol.release.xcconfig */,
-				119CCB64BA72FF0B442FF264 /* Pods-AlgolTests.debug.xcconfig */,
-				D515BDBEB8CEB4DE7E7FF54E /* Pods-AlgolTests.release.xcconfig */,
-				1D0853574221DA7FE145B66A /* Pods-AlgolUITests.debug.xcconfig */,
-				4BB3DC354D6602024D06E8EB /* Pods-AlgolUITests.release.xcconfig */,
+				E0F59B295B50999890EC82F6 /* Podfile */,
+				B0F3B1C504A84B004D2B1047 /* Pods-Algol.debug.xcconfig */,
+				8C4DAE2951002A0B50BF0543 /* Pods-Algol.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8BEB73643BECA404EE9BAD11 /* Frameworks */ = {
+		7D444BD544FEE85F1C81A6BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				076827531BEF15A9004CB641 /* Alamofire.framework */,
-				076827541BEF15A9004CB641 /* Argo.framework */,
-				076827551BEF15A9004CB641 /* Nimble.framework */,
-				076827561BEF15A9004CB641 /* Pods_AlgolTests.framework */,
-				076827571BEF15A9004CB641 /* Pods_AlgolUITests.framework */,
-				076827581BEF15A9004CB641 /* Quick.framework */,
-				076827591BEF15A9004CB641 /* TaskQueue.framework */,
-				245AD8BDEA7792B1AB1329C6 /* Pods_Algol.framework */,
-				75BA4B6F8509F3ED81FAF832 /* Pods_AlgolTests.framework */,
-				4E9D7B4803EBA29C21666A70 /* Pods_AlgolUITests.framework */,
+				FCB71B11081CFCE13EB2093B /* Pods_Algol.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,6 +199,14 @@
 				E0F59A174EDF0041A5389369 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E0F59FF5BB26EC1D15C538E3 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				E0F59D7204EC78392607C767 /* TaskQueue.swift */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,8 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A002351BEF0EFF002E687F /* Assets.xcassets in Resources */,
+				07EF442B1BEF4D4700E8190F /* Swaggers in Resources */,
 				E0F59765BE21959891AC86FB /* Main.storyboard in Resources */,
 				E0F59E0047F6FDEB74B47B8B /* LaunchScreen.storyboard in Resources */,
+				E0F5944A99454FEE8E6E26FB /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Algol/Pods-Algol-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algol/Pods-Algol-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		678D64CE0EC2A9BADCBB6EE8 /* Check Pods Manifest.lock */ = {
@@ -428,7 +403,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AlgolTests/Pods-AlgolTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolTests/Pods-AlgolTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A747F02C46F77D6F1407094D /* Copy Pods Resources */ = {
@@ -443,7 +418,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Algol/Pods-Algol-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algol/Pods-Algol-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB5BD9C13987331C3044149A /* Copy Pods Resources */ = {
@@ -458,7 +433,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF2A50F8416F48D77188C247 /* Embed Pods Frameworks */ = {
@@ -473,7 +448,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AlgolTests/Pods-AlgolTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolTests/Pods-AlgolTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DA6CB5C68E186ACEDF349B2F /* Check Pods Manifest.lock */ = {
@@ -498,9 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A002331BEF0EFF002E687F /* Algol.xcdatamodeld in Sources */,
 				07A0022B1BEF0EFF002E687F /* AppDelegate.swift in Sources */,
 				E0F59E3D6E9BD732DB7850F7 /* ViewController.swift in Sources */,
+				E0F59AC8E80C47561F25D890 /* TaskQueue.swift in Sources */,
+				E0F5925C9E1B99BE56342C84 /* Algol.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,9 +614,13 @@
 		};
 		07A002531BEF0EFF002E687F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3644A52867A9E3694171C92 /* Pods-Algol.debug.xcconfig */;
+			baseConfigurationReference = B0F3B1C504A84B004D2B1047 /* Pods-Algol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Algol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol;
@@ -650,9 +630,13 @@
 		};
 		07A002541BEF0EFF002E687F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8C0E5E2770D7913A5ED221B /* Pods-Algol.release.xcconfig */;
+			baseConfigurationReference = 8C4DAE2951002A0B50BF0543 /* Pods-Algol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Algol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol;
@@ -662,7 +646,6 @@
 		};
 		07A002561BEF0EFF002E687F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 119CCB64BA72FF0B442FF264 /* Pods-AlgolTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AlgolTests/Info.plist;
@@ -675,7 +658,6 @@
 		};
 		07A002571BEF0EFF002E687F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D515BDBEB8CEB4DE7E7FF54E /* Pods-AlgolTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AlgolTests/Info.plist;
@@ -688,7 +670,6 @@
 		};
 		07A002591BEF0EFF002E687F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D0853574221DA7FE145B66A /* Pods-AlgolUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = AlgolUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -701,7 +682,6 @@
 		};
 		07A0025A1BEF0EFF002E687F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BB3DC354D6602024D06E8EB /* Pods-AlgolUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = AlgolUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -754,12 +734,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		07A002311BEF0EFF002E687F /* Algol.xcdatamodeld */ = {
+		E0F59912576411BE567920D4 /* Algol.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				07A002321BEF0EFF002E687F /* Algol.xcdatamodel */,
+				E0F59784D96E8BCB731697FE /* Algol.xcdatamodel */,
 			);
-			currentVersion = 07A002321BEF0EFF002E687F /* Algol.xcdatamodel */;
+			currentVersion = E0F59784D96E8BCB731697FE /* Algol.xcdatamodel */;
 			path = Algol.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
