@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Algol/Swaggers/APIs.swift"
+            timestampString = "468852478.054059"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "APIBase"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Algol.RequestBuilder.__deallocating_deinit"
+                  moduleName = "Algol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azamara/Development/workspace/william/factory-algol/ios/Algol/Algol/Swaggers/APIs.swift"
+                  timestampString = "468852478.070014"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Algol.RequestBuilder.deinit"
+                  moduleName = "Algol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azamara/Development/workspace/william/factory-algol/ios/Algol/Algol/Swaggers/APIs.swift"
+                  timestampString = "468852478.070274"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
