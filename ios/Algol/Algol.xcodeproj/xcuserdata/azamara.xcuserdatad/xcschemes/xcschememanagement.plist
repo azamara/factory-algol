@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>AlgolWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>070658921BF22B9000582C8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>07A002261BEF0EFF002E687F</key>
 		<dict>
 			<key>primary</key>

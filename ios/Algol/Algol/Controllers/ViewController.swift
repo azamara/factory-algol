@@ -18,6 +18,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var dustLabel: UILabel!
     
+    var timeLabel: UILabel?
+    
+    var timer: NSTimer?
+    let INTERVAL_SECONDS = 0.2
+    
+    var dateFormatter = NSDateFormatter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,7 +71,7 @@ class ViewController: UIViewController {
         let queue2 = TaskQueue()
         
         queue2.tasks +=~ {
-            let counter = self.myInterval(2)
+            let counter = self.myInterval(1)
             
             print("Started ----")
             
@@ -73,7 +80,7 @@ class ViewController: UIViewController {
                     print(n)
             }
             
-            NSThread.sleepForTimeInterval(10)
+            NSThread.sleepForTimeInterval(2)
             
             subscription.dispose()
             
@@ -96,6 +103,25 @@ class ViewController: UIViewController {
 //        subscription.dispose()
 //        
 //        print("Main Thread Ended ----")
+        
+        
+        // Widget
+        // set up date formatter since it's expensive to keep creating them
+        self.dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
+        self.dateFormatter.timeStyle = NSDateFormatterStyle.LongStyle
+        
+        // create and add label to display time
+        timeLabel = UILabel(frame: self.view.frame)
+        updateTimeLabel(nil) // to initialize the time displayed
+        // style the label a little: multiple lines, center, large text
+        timeLabel?.numberOfLines = 0 // allow it to wrap on to multiple lines if needed
+        timeLabel?.textAlignment = .Center
+        timeLabel?.font = UIFont.systemFontOfSize(28.0)
+        self.view.addSubview(timeLabel!)
+        
+        // Timer will tick ever 1/5 of a second to tell the label to update the display time
+        timer = NSTimer.scheduledTimerWithTimeInterval(INTERVAL_SECONDS, target: self, selector: "updateTimeLabel:", userInfo: nil, repeats: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -127,9 +153,23 @@ class ViewController: UIViewController {
             return cancel
         }
     }
-
-
-
+    
+    func updateTimeLabel(timer: NSTimer!)
+    {
+        if let label = timeLabel
+        {
+            // get the current time
+            let now = NSDate()
+            // convert time to a string for display
+            let dateString = dateFormatter.stringFromDate(now)
+            label.text = dateString
+            // set the dateString in the shared data store
+            let defaults = NSUserDefaults(suiteName: "group.io.jnw.Algol.AlgolWidget")
+            defaults?.setObject("\(dateString) \n dust: \(self.dustLabel!.text!) \n temperature: \(self.temperatureLabel!.text!) \n humidity: \(self.humidityLabel!.text!)", forKey: "timeString")
+            // tell the defaults to write to disk now
+            defaults?.synchronize()
+        }
+    }
 
 }
 

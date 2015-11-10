@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070658951BF22B9000582C8E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070658941BF22B9000582C8E /* NotificationCenter.framework */; };
+		070658981BF22B9000582C8E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070658971BF22B9000582C8E /* TodayViewController.swift */; };
+		0706589B1BF22B9000582C8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070658991BF22B9000582C8E /* MainInterface.storyboard */; };
+		0706589F1BF22B9000582C8E /* AlgolWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 070658931BF22B9000582C8E /* AlgolWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		07A0022B1BEF0EFF002E687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0022A1BEF0EFF002E687F /* AppDelegate.swift */; };
 		07A002351BEF0EFF002E687F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A002341BEF0EFF002E687F /* Assets.xcassets */; };
 		07A002431BEF0EFF002E687F /* AlgolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A002421BEF0EFF002E687F /* AlgolTests.swift */; };
@@ -29,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0706589D1BF22B9000582C8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A0021F1BEF0EFF002E687F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 070658921BF22B9000582C8E;
+			remoteInfo = AlgolWidget;
+		};
 		07A0023F1BEF0EFF002E687F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07A0021F1BEF0EFF002E687F /* Project object */;
@@ -45,7 +56,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		070658A31BF22B9100582C8E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0706589F1BF22B9000582C8E /* AlgolWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		070658931BF22B9000582C8E /* AlgolWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlgolWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		070658941BF22B9000582C8E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		070658971BF22B9000582C8E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		0706589A1BF22B9000582C8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0706589C1BF22B9000582C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		070658A41BF22DEB00582C8E /* Algol.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Algol.entitlements; sourceTree = "<group>"; };
+		078A71EF1BF23C77006461C3 /* Pods_Algol.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Algol.framework; path = "Pods/../build/Debug-iphoneos/Pods_Algol.framework"; sourceTree = "<group>"; };
+		078A71F21BF23D11006461C3 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		078A71F31BF23D11006461C3 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		078A71F51BF23D11006461C3 /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		078A71F61BF23D11006461C3 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		078A71F71BF23D11006461C3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		078A71F91BF23D11006461C3 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		078A71FA1BF23D11006461C3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		078A71FB1BF23D11006461C3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		07A002271BEF0EFF002E687F /* Algol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A0022A1BEF0EFF002E687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07A002341BEF0EFF002E687F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Support Files/Assets.xcassets"; sourceTree = "<group>"; };
@@ -56,6 +96,8 @@
 		07A002491BEF0EFF002E687F /* AlgolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A0024D1BEF0EFF002E687F /* AlgolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgolUITests.swift; sourceTree = "<group>"; };
 		07A0024F1BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B26E6B1BF234F000001401 /* AlgolWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AlgolWidget.entitlements; sourceTree = "<group>"; };
+		07B26E6C1BF23AFF00001401 /* Pods_Algol.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Algol.framework; path = "Pods/../build/Debug-iphoneos/Pods_Algol.framework"; sourceTree = "<group>"; };
 		07EF442E1BEF532400E8190F /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireImplementations.swift; path = Swaggers/AlamofireImplementations.swift; sourceTree = "<group>"; };
 		07EF442F1BEF532400E8190F /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelper.swift; path = Swaggers/APIHelper.swift; sourceTree = "<group>"; };
 		07EF44311BEF532400E8190F /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIs.swift; path = Swaggers/APIs.swift; sourceTree = "<group>"; };
@@ -76,6 +118,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		070658901BF22B9000582C8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070658951BF22B9000582C8E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07A002241BEF0EFF002E687F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,12 +151,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070658961BF22B9000582C8E /* AlgolWidget */ = {
+			isa = PBXGroup;
+			children = (
+				07B26E6B1BF234F000001401 /* AlgolWidget.entitlements */,
+				070658971BF22B9000582C8E /* TodayViewController.swift */,
+				070658991BF22B9000582C8E /* MainInterface.storyboard */,
+				0706589C1BF22B9000582C8E /* Info.plist */,
+			);
+			path = AlgolWidget;
+			sourceTree = "<group>";
+		};
+		078A71F11BF23D11006461C3 /* Swaggers */ = {
+			isa = PBXGroup;
+			children = (
+				078A71F21BF23D11006461C3 /* AlamofireImplementations.swift */,
+				078A71F31BF23D11006461C3 /* APIHelper.swift */,
+				078A71F41BF23D11006461C3 /* APIs */,
+				078A71F61BF23D11006461C3 /* APIs.swift */,
+				078A71F71BF23D11006461C3 /* Extensions.swift */,
+				078A71F81BF23D11006461C3 /* Models */,
+				078A71FB1BF23D11006461C3 /* Models.swift */,
+			);
+			name = Swaggers;
+			path = Algol/Swaggers;
+			sourceTree = "<group>";
+		};
+		078A71F41BF23D11006461C3 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				078A71F51BF23D11006461C3 /* HomeAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		078A71F81BF23D11006461C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				078A71F91BF23D11006461C3 /* Error.swift */,
+				078A71FA1BF23D11006461C3 /* Home.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		07A0021E1BEF0EFF002E687F = {
 			isa = PBXGroup;
 			children = (
 				07A002291BEF0EFF002E687F /* Algol */,
 				07A002411BEF0EFF002E687F /* AlgolTests */,
 				07A0024C1BEF0EFF002E687F /* AlgolUITests */,
+				070658961BF22B9000582C8E /* AlgolWidget */,
 				07A002281BEF0EFF002E687F /* Products */,
 				75098898BA8CAED9E10EE270 /* Pods */,
 				7D444BD544FEE85F1C81A6BF /* Frameworks */,
@@ -119,6 +213,7 @@
 				07A002271BEF0EFF002E687F /* Algol.app */,
 				07A0023E1BEF0EFF002E687F /* AlgolTests.xctest */,
 				07A002491BEF0EFF002E687F /* AlgolUITests.xctest */,
+				070658931BF22B9000582C8E /* AlgolWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				07EF442D1BEF52D700E8190F /* Swaggers */,
+				070658A41BF22DEB00582C8E /* Algol.entitlements */,
 				07A0022A1BEF0EFF002E687F /* AppDelegate.swift */,
 				07A002341BEF0EFF002E687F /* Assets.xcassets */,
 				07A002391BEF0EFF002E687F /* Info.plist */,
@@ -203,7 +299,11 @@
 		7D444BD544FEE85F1C81A6BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				078A71F11BF23D11006461C3 /* Swaggers */,
+				078A71EF1BF23C77006461C3 /* Pods_Algol.framework */,
+				07B26E6C1BF23AFF00001401 /* Pods_Algol.framework */,
 				FCB71B11081CFCE13EB2093B /* Pods_Algol.framework */,
+				070658941BF22B9000582C8E /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,6 +357,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		070658921BF22B9000582C8E /* AlgolWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 070658A21BF22B9100582C8E /* Build configuration list for PBXNativeTarget "AlgolWidget" */;
+			buildPhases = (
+				0706588F1BF22B9000582C8E /* Sources */,
+				070658901BF22B9000582C8E /* Frameworks */,
+				070658911BF22B9000582C8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlgolWidget;
+			productName = AlgolWidget;
+			productReference = 070658931BF22B9000582C8E /* AlgolWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		07A002261BEF0EFF002E687F /* Algol */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07A002521BEF0EFF002E687F /* Build configuration list for PBXNativeTarget "Algol" */;
@@ -267,10 +384,12 @@
 				07A002251BEF0EFF002E687F /* Resources */,
 				4C996D68D097B8CE57FDF0A2 /* Embed Pods Frameworks */,
 				A747F02C46F77D6F1407094D /* Copy Pods Resources */,
+				070658A31BF22B9100582C8E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0706589E1BF22B9000582C8E /* PBXTargetDependency */,
 			);
 			name = Algol;
 			productName = Algol;
@@ -328,8 +447,23 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "William Kim";
 				TargetAttributes = {
+					070658921BF22B9000582C8E = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2J68N46PJ7;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					07A002261BEF0EFF002E687F = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2J68N46PJ7;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					07A0023D1BEF0EFF002E687F = {
 						CreatedOnToolsVersion = 7.1;
@@ -357,11 +491,20 @@
 				07A002261BEF0EFF002E687F /* Algol */,
 				07A0023D1BEF0EFF002E687F /* AlgolTests */,
 				07A002481BEF0EFF002E687F /* AlgolUITests */,
+				070658921BF22B9000582C8E /* AlgolWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		070658911BF22B9000582C8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0706589B1BF22B9000582C8E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07A002251BEF0EFF002E687F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +656,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0706588F1BF22B9000582C8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070658981BF22B9000582C8E /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07A002231BEF0EFF002E687F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,6 +702,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0706589E1BF22B9000582C8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 070658921BF22B9000582C8E /* AlgolWidget */;
+			targetProxy = 0706589D1BF22B9000582C8E /* PBXContainerItemProxy */;
+		};
 		07A002401BEF0EFF002E687F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 07A002261BEF0EFF002E687F /* Algol */;
@@ -564,6 +720,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		070658991BF22B9000582C8E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0706589A1BF22B9000582C8E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		E0F599215FB133E2ECB0D0A5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -583,6 +747,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		070658A01BF22B9100582C8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlgolWidget/AlgolWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = AlgolWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol.AlgolWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		070658A11BF22B9100582C8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlgolWidget/AlgolWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = AlgolWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol.AlgolWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		07A002501BEF0EFF002E687F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -669,6 +871,10 @@
 			baseConfigurationReference = B0F3B1C504A84B004D2B1047 /* Pods-Algol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Algol/Algol.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -677,6 +883,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -685,6 +892,10 @@
 			baseConfigurationReference = 8C4DAE2951002A0B50BF0543 /* Pods-Algol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Algol/Algol.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -693,6 +904,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -747,6 +959,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		070658A21BF22B9100582C8E /* Build configuration list for PBXNativeTarget "AlgolWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070658A01BF22B9100582C8E /* Debug */,
+				070658A11BF22B9100582C8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		07A002221BEF0EFF002E687F /* Build configuration list for PBXProject "Algol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
