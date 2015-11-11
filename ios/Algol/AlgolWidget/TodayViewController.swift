@@ -14,8 +14,8 @@ import RxSwift
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var widgetTimeLabel: UILabel?
     
-    
     var x:Int = 1;
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +28,29 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
-    func getSensor() {
-        SwaggerClientAPI.HomeAPI.homeGet(location: Double(2)).execute { (response, error) in
-            if response!.statusCode == 200,
-                let home: Home = response!.body as Home {
-                    self.homeLabel!.text = "\(home.home_id!)"
-                    self.temperatureLabel!.text = "\(home.temperature!)º"
-                    self.humidityLabel!.text = "\(home.humidity!)%"
-                    self.dustLabel!.text = "\(home.dust!)"
-                    
-                    widgetTimeLabel?.text = "\(NSDate.init()) \n dust: \(home.dust!)"
+    func getSensor(completionHandler: ((NCUpdateResult) -> Void)?=nil) {
+        widgetTimeLabel?.text = "날짜11: \n \(NSDate.init())"
+
+        let queue = TaskQueue()
+        
+        queue.tasks +=~ {
+            SwaggerClientAPI.HomeAPI.homeGet(location: Double(2)).execute { (response, error) in
+                if response!.statusCode == 200,
+                    let home: Home = response!.body as Home {
+                        print(200)
+                        //                    self.homeLabel!.text = "\(home.home_id!)"
+                        //                    self.temperatureLabel!.text = "\(home.temperature!)º"
+                        //                    self.humidityLabel!.text = "\(home.humidity!)%"
+                        //                    self.dustLabel!.text = "\(home.dust!)"
+                        self.widgetTimeLabel?.text = "날짜2: \n \(NSDate.init()) \n dust: \(home.dust!)"
+                        if (completionHandler != nil) {
+                            completionHandler!(NCUpdateResult.NewData)
+                        }
+                }
             }
         }
+        
+        queue.run()
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
@@ -48,17 +59,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Perform any setup necessary in order to update the view.
         widgetTimeLabel?.text = "Still not sure!!!"
 
-        self.getSensor()
+        getSensor(completionHandler)
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         
-        completionHandler(NCUpdateResult.NewData)
     }
 
     @IBAction func btnRefresh(sender: AnyObject) {
-        self.getSensor()
+        getSensor()
     }
     
 }

@@ -8,9 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		070658951BF22B9000582C8E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070658941BF22B9000582C8E /* NotificationCenter.framework */; };
-		070658981BF22B9000582C8E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070658971BF22B9000582C8E /* TodayViewController.swift */; };
 		0706589B1BF22B9000582C8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070658991BF22B9000582C8E /* MainInterface.storyboard */; };
 		0706589F1BF22B9000582C8E /* AlgolWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 070658931BF22B9000582C8E /* AlgolWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		078A72111BF39DFA006461C3 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070658971BF22B9000582C8E /* TodayViewController.swift */; };
+		078A72121BF39E21006461C3 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442E1BEF532400E8190F /* AlamofireImplementations.swift */; };
+		078A72131BF39E21006461C3 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442F1BEF532400E8190F /* APIHelper.swift */; };
+		078A72141BF39E21006461C3 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF443E1BEF55F800E8190F /* HomeAPI.swift */; };
+		078A72151BF39E21006461C3 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44311BEF532400E8190F /* APIs.swift */; };
+		078A72161BF39E21006461C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44321BEF532400E8190F /* Extensions.swift */; };
+		078A72171BF39E21006461C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44401BEF55FD00E8190F /* Error.swift */; };
+		078A72181BF39E21006461C3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44411BEF55FD00E8190F /* Home.swift */; };
+		078A72191BF39E21006461C3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44341BEF532400E8190F /* Models.swift */; };
+		078A721A1BF39E35006461C3 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442E1BEF532400E8190F /* AlamofireImplementations.swift */; };
+		078A721B1BF39E35006461C3 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442F1BEF532400E8190F /* APIHelper.swift */; };
+		078A721C1BF39E35006461C3 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF443E1BEF55F800E8190F /* HomeAPI.swift */; };
+		078A721D1BF39E35006461C3 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44311BEF532400E8190F /* APIs.swift */; };
+		078A721E1BF39E35006461C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44321BEF532400E8190F /* Extensions.swift */; };
+		078A721F1BF39E35006461C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44401BEF55FD00E8190F /* Error.swift */; };
+		078A72201BF39E35006461C3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44411BEF55FD00E8190F /* Home.swift */; };
+		078A72211BF39E35006461C3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44341BEF532400E8190F /* Models.swift */; };
+		078A72221BF39E35006461C3 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442E1BEF532400E8190F /* AlamofireImplementations.swift */; };
+		078A72231BF39E35006461C3 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442F1BEF532400E8190F /* APIHelper.swift */; };
+		078A72241BF39E35006461C3 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF443E1BEF55F800E8190F /* HomeAPI.swift */; };
+		078A72251BF39E35006461C3 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44311BEF532400E8190F /* APIs.swift */; };
+		078A72261BF39E35006461C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44321BEF532400E8190F /* Extensions.swift */; };
+		078A72271BF39E35006461C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44401BEF55FD00E8190F /* Error.swift */; };
+		078A72281BF39E35006461C3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44411BEF55FD00E8190F /* Home.swift */; };
+		078A72291BF39E35006461C3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44341BEF532400E8190F /* Models.swift */; };
+		078A722D1BF3A11E006461C3 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F59D7204EC78392607C767 /* TaskQueue.swift */; };
 		07A0022B1BEF0EFF002E687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0022A1BEF0EFF002E687F /* AppDelegate.swift */; };
 		07A002351BEF0EFF002E687F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A002341BEF0EFF002E687F /* Assets.xcassets */; };
 		07A002431BEF0EFF002E687F /* AlgolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A002421BEF0EFF002E687F /* AlgolTests.swift */; };
@@ -23,13 +48,14 @@
 		07EF443F1BEF55F800E8190F /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF443E1BEF55F800E8190F /* HomeAPI.swift */; };
 		07EF44421BEF55FD00E8190F /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44401BEF55FD00E8190F /* Error.swift */; };
 		07EF44431BEF55FD00E8190F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44411BEF55FD00E8190F /* Home.swift */; };
-		AB25573037B6781D4A999010 /* Pods_Algol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB71B11081CFCE13EB2093B /* Pods_Algol.framework */; };
 		E0F5925C9E1B99BE56342C84 /* Algol.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0F59912576411BE567920D4 /* Algol.xcdatamodeld */; };
 		E0F5944A99454FEE8E6E26FB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E0F59B295B50999890EC82F6 /* Podfile */; };
 		E0F59765BE21959891AC86FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F599215FB133E2ECB0D0A5 /* Main.storyboard */; };
 		E0F59AC8E80C47561F25D890 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F59D7204EC78392607C767 /* TaskQueue.swift */; };
 		E0F59E0047F6FDEB74B47B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F59A174EDF0041A5389369 /* LaunchScreen.storyboard */; };
 		E0F59E3D6E9BD732DB7850F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F59C75D585148FE6F20250 /* ViewController.swift */; };
+		E724AC0D3F58C8237220B7DB /* Pods_AlgolWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70ECE5E842242FACC2B3087 /* Pods_AlgolWidget.framework */; };
+		F414E88F85E7C509FFE0EBD6 /* Pods_Algol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB71B11081CFCE13EB2093B /* Pods_Algol.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,15 +103,6 @@
 		0706589A1BF22B9000582C8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0706589C1BF22B9000582C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		070658A41BF22DEB00582C8E /* Algol.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Algol.entitlements; sourceTree = "<group>"; };
-		078A71EF1BF23C77006461C3 /* Pods_Algol.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Algol.framework; path = "Pods/../build/Debug-iphoneos/Pods_Algol.framework"; sourceTree = "<group>"; };
-		078A71F21BF23D11006461C3 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
-		078A71F31BF23D11006461C3 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
-		078A71F51BF23D11006461C3 /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
-		078A71F61BF23D11006461C3 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
-		078A71F71BF23D11006461C3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		078A71F91BF23D11006461C3 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		078A71FA1BF23D11006461C3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		078A71FB1BF23D11006461C3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		07A002271BEF0EFF002E687F /* Algol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A0022A1BEF0EFF002E687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07A002341BEF0EFF002E687F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Support Files/Assets.xcassets"; sourceTree = "<group>"; };
@@ -97,7 +114,6 @@
 		07A0024D1BEF0EFF002E687F /* AlgolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgolUITests.swift; sourceTree = "<group>"; };
 		07A0024F1BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07B26E6B1BF234F000001401 /* AlgolWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AlgolWidget.entitlements; sourceTree = "<group>"; };
-		07B26E6C1BF23AFF00001401 /* Pods_Algol.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Algol.framework; path = "Pods/../build/Debug-iphoneos/Pods_Algol.framework"; sourceTree = "<group>"; };
 		07EF442E1BEF532400E8190F /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireImplementations.swift; path = Swaggers/AlamofireImplementations.swift; sourceTree = "<group>"; };
 		07EF442F1BEF532400E8190F /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelper.swift; path = Swaggers/APIHelper.swift; sourceTree = "<group>"; };
 		07EF44311BEF532400E8190F /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIs.swift; path = Swaggers/APIs.swift; sourceTree = "<group>"; };
@@ -106,14 +122,17 @@
 		07EF443E1BEF55F800E8190F /* HomeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeAPI.swift; path = Swaggers/APIs/HomeAPI.swift; sourceTree = "<group>"; };
 		07EF44401BEF55FD00E8190F /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Swaggers/Models/Error.swift; sourceTree = "<group>"; };
 		07EF44411BEF55FD00E8190F /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home.swift; path = Swaggers/Models/Home.swift; sourceTree = "<group>"; };
-		8C4DAE2951002A0B50BF0543 /* Pods-Algol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algol.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algol/Pods-Algol.release.xcconfig"; sourceTree = "<group>"; };
-		B0F3B1C504A84B004D2B1047 /* Pods-Algol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algol.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Algol/Pods-Algol.debug.xcconfig"; sourceTree = "<group>"; };
+		20A576E809B1C3DFA8C52FFF /* Pods-AlgolWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlgolWidget/Pods-AlgolWidget.release.xcconfig"; sourceTree = "<group>"; };
+		8D2D0E340307AB3BD3D7C11E /* Pods-Algol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algol.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Algol/Pods-Algol.debug.xcconfig"; sourceTree = "<group>"; };
+		B22DE382AD6FB1C57464E7DF /* Pods-AlgolWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlgolWidget/Pods-AlgolWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		E0F59671B7539C5E545BCA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Algol/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		E0F59784D96E8BCB731697FE /* Algol.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Algol.xcdatamodel; sourceTree = "<group>"; };
 		E0F59848BA5019301B9D7689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Algol/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		E0F59B295B50999890EC82F6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E0F59C75D585148FE6F20250 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0F59D7204EC78392607C767 /* TaskQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskQueue.swift; sourceTree = "<group>"; };
+		F0E0F1346AFAF7A3D61CB1FC /* Pods-Algol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algol.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algol/Pods-Algol.release.xcconfig"; sourceTree = "<group>"; };
+		F70ECE5E842242FACC2B3087 /* Pods_AlgolWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlgolWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB71B11081CFCE13EB2093B /* Pods_Algol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070658951BF22B9000582C8E /* NotificationCenter.framework in Frameworks */,
+				E724AC0D3F58C8237220B7DB /* Pods_AlgolWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB25573037B6781D4A999010 /* Pods_Algol.framework in Frameworks */,
+				F414E88F85E7C509FFE0EBD6 /* Pods_Algol.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,44 +174,12 @@
 		070658961BF22B9000582C8E /* AlgolWidget */ = {
 			isa = PBXGroup;
 			children = (
-				07B26E6B1BF234F000001401 /* AlgolWidget.entitlements */,
 				070658971BF22B9000582C8E /* TodayViewController.swift */,
+				07B26E6B1BF234F000001401 /* AlgolWidget.entitlements */,
 				070658991BF22B9000582C8E /* MainInterface.storyboard */,
 				0706589C1BF22B9000582C8E /* Info.plist */,
 			);
 			path = AlgolWidget;
-			sourceTree = "<group>";
-		};
-		078A71F11BF23D11006461C3 /* Swaggers */ = {
-			isa = PBXGroup;
-			children = (
-				078A71F21BF23D11006461C3 /* AlamofireImplementations.swift */,
-				078A71F31BF23D11006461C3 /* APIHelper.swift */,
-				078A71F41BF23D11006461C3 /* APIs */,
-				078A71F61BF23D11006461C3 /* APIs.swift */,
-				078A71F71BF23D11006461C3 /* Extensions.swift */,
-				078A71F81BF23D11006461C3 /* Models */,
-				078A71FB1BF23D11006461C3 /* Models.swift */,
-			);
-			name = Swaggers;
-			path = Algol/Swaggers;
-			sourceTree = "<group>";
-		};
-		078A71F41BF23D11006461C3 /* APIs */ = {
-			isa = PBXGroup;
-			children = (
-				078A71F51BF23D11006461C3 /* HomeAPI.swift */,
-			);
-			path = APIs;
-			sourceTree = "<group>";
-		};
-		078A71F81BF23D11006461C3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				078A71F91BF23D11006461C3 /* Error.swift */,
-				078A71FA1BF23D11006461C3 /* Home.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		07A0021E1BEF0EFF002E687F = {
@@ -221,7 +209,6 @@
 		07A002291BEF0EFF002E687F /* Algol */ = {
 			isa = PBXGroup;
 			children = (
-				07EF442D1BEF52D700E8190F /* Swaggers */,
 				070658A41BF22DEB00582C8E /* Algol.entitlements */,
 				07A0022A1BEF0EFF002E687F /* AppDelegate.swift */,
 				07A002341BEF0EFF002E687F /* Assets.xcassets */,
@@ -267,6 +254,7 @@
 				07EF44341BEF532400E8190F /* Models.swift */,
 			);
 			name = Swaggers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		07EF443C1BEF55DD00E8190F /* APIs */ = {
@@ -290,8 +278,10 @@
 			isa = PBXGroup;
 			children = (
 				E0F59B295B50999890EC82F6 /* Podfile */,
-				B0F3B1C504A84B004D2B1047 /* Pods-Algol.debug.xcconfig */,
-				8C4DAE2951002A0B50BF0543 /* Pods-Algol.release.xcconfig */,
+				8D2D0E340307AB3BD3D7C11E /* Pods-Algol.debug.xcconfig */,
+				F0E0F1346AFAF7A3D61CB1FC /* Pods-Algol.release.xcconfig */,
+				B22DE382AD6FB1C57464E7DF /* Pods-AlgolWidget.debug.xcconfig */,
+				20A576E809B1C3DFA8C52FFF /* Pods-AlgolWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -299,11 +289,9 @@
 		7D444BD544FEE85F1C81A6BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				078A71F11BF23D11006461C3 /* Swaggers */,
-				078A71EF1BF23C77006461C3 /* Pods_Algol.framework */,
-				07B26E6C1BF23AFF00001401 /* Pods_Algol.framework */,
 				FCB71B11081CFCE13EB2093B /* Pods_Algol.framework */,
 				070658941BF22B9000582C8E /* NotificationCenter.framework */,
+				F70ECE5E842242FACC2B3087 /* Pods_AlgolWidget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -349,6 +337,7 @@
 		E0F59FF5BB26EC1D15C538E3 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				07EF442D1BEF52D700E8190F /* Swaggers */,
 				E0F59D7204EC78392607C767 /* TaskQueue.swift */,
 			);
 			path = Libs;
@@ -361,9 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 070658A21BF22B9100582C8E /* Build configuration list for PBXNativeTarget "AlgolWidget" */;
 			buildPhases = (
+				A88A28DDB0DD9C76F0C485E9 /* Check Pods Manifest.lock */,
 				0706588F1BF22B9000582C8E /* Sources */,
 				070658901BF22B9000582C8E /* Frameworks */,
 				070658911BF22B9000582C8E /* Resources */,
+				01C8317ACABE6C5423DA9E3B /* Embed Pods Frameworks */,
+				42FA049BA06D166F48637752 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -533,6 +525,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01C8317ACABE6C5423DA9E3B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolWidget/Pods-AlgolWidget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0CD0427DFF13ED29A2F43FEB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,6 +553,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42FA049BA06D166F48637752 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolWidget/Pods-AlgolWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4C996D68D097B8CE57FDF0A2 /* Embed Pods Frameworks */ = {
@@ -608,6 +630,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algol/Pods-Algol-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A88A28DDB0DD9C76F0C485E9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		BB5BD9C13987331C3044149A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -660,7 +697,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070658981BF22B9000582C8E /* TodayViewController.swift in Sources */,
+				078A72131BF39E21006461C3 /* APIHelper.swift in Sources */,
+				078A72161BF39E21006461C3 /* Extensions.swift in Sources */,
+				078A72121BF39E21006461C3 /* AlamofireImplementations.swift in Sources */,
+				078A72111BF39DFA006461C3 /* TodayViewController.swift in Sources */,
+				078A722D1BF3A11E006461C3 /* TaskQueue.swift in Sources */,
+				078A72151BF39E21006461C3 /* APIs.swift in Sources */,
+				078A72171BF39E21006461C3 /* Error.swift in Sources */,
+				078A72191BF39E21006461C3 /* Models.swift in Sources */,
+				078A72181BF39E21006461C3 /* Home.swift in Sources */,
+				078A72141BF39E21006461C3 /* HomeAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +733,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078A72231BF39E35006461C3 /* APIHelper.swift in Sources */,
+				078A72261BF39E35006461C3 /* Extensions.swift in Sources */,
+				078A72221BF39E35006461C3 /* AlamofireImplementations.swift in Sources */,
 				07A002431BEF0EFF002E687F /* AlgolTests.swift in Sources */,
+				078A72251BF39E35006461C3 /* APIs.swift in Sources */,
+				078A72271BF39E35006461C3 /* Error.swift in Sources */,
+				078A72291BF39E35006461C3 /* Models.swift in Sources */,
+				078A72281BF39E35006461C3 /* Home.swift in Sources */,
+				078A72241BF39E35006461C3 /* HomeAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +749,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078A721B1BF39E35006461C3 /* APIHelper.swift in Sources */,
+				078A721E1BF39E35006461C3 /* Extensions.swift in Sources */,
+				078A721A1BF39E35006461C3 /* AlamofireImplementations.swift in Sources */,
 				07A0024E1BEF0EFF002E687F /* AlgolUITests.swift in Sources */,
+				078A721D1BF39E35006461C3 /* APIs.swift in Sources */,
+				078A721F1BF39E35006461C3 /* Error.swift in Sources */,
+				078A72211BF39E35006461C3 /* Models.swift in Sources */,
+				078A72201BF39E35006461C3 /* Home.swift in Sources */,
+				078A721C1BF39E35006461C3 /* HomeAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +811,7 @@
 /* Begin XCBuildConfiguration section */
 		070658A01BF22B9100582C8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22DE382AD6FB1C57464E7DF /* Pods-AlgolWidget.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AlgolWidget/AlgolWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -768,6 +831,7 @@
 		};
 		070658A11BF22B9100582C8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A576E809B1C3DFA8C52FFF /* Pods-AlgolWidget.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AlgolWidget/AlgolWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -824,6 +888,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -868,7 +933,7 @@
 		};
 		07A002531BEF0EFF002E687F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0F3B1C504A84B004D2B1047 /* Pods-Algol.debug.xcconfig */;
+			baseConfigurationReference = 8D2D0E340307AB3BD3D7C11E /* Pods-Algol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Algol/Algol.entitlements;
@@ -889,7 +954,7 @@
 		};
 		07A002541BEF0EFF002E687F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C4DAE2951002A0B50BF0543 /* Pods-Algol.release.xcconfig */;
+			baseConfigurationReference = F0E0F1346AFAF7A3D61CB1FC /* Pods-Algol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Algol/Algol.entitlements;

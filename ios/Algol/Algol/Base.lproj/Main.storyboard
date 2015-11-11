@@ -81,16 +81,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYs-po-fin">
+                                <rect key="frame" x="274" y="164" width="53" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="btnRefresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5fW-yk-BLF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iVX-cc-Kg4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8sX-OA-igo"/>
                             <constraint firstItem="4de-R4-iFl" firstAttribute="top" secondItem="psH-SU-pcC" secondAttribute="bottom" constant="8" id="93j-bH-Gjw"/>
+                            <constraint firstItem="CYs-po-fin" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-121" id="CeF-by-jbz"/>
                             <constraint firstItem="K0e-Ay-kZ2" firstAttribute="top" secondItem="iVX-cc-Kg4" secondAttribute="bottom" constant="8" symbolic="YES" id="EZ6-wW-fQg"/>
                             <constraint firstItem="iVX-cc-Kg4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GZc-Eo-bzS"/>
                             <constraint firstItem="psH-SU-pcC" firstAttribute="leading" secondItem="K0e-Ay-kZ2" secondAttribute="leading" id="JFi-7K-l2Q"/>
                             <constraint firstItem="psH-SU-pcC" firstAttribute="top" secondItem="K0e-Ay-kZ2" secondAttribute="bottom" constant="8" symbolic="YES" id="NoE-Qd-S7n"/>
+                            <constraint firstItem="CYs-po-fin" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SXo-9G-iMu"/>
                             <constraint firstItem="K0e-Ay-kZ2" firstAttribute="leading" secondItem="iVX-cc-Kg4" secondAttribute="leading" id="g0j-Yl-txT"/>
                             <constraint firstItem="4de-R4-iFl" firstAttribute="leading" secondItem="iVX-cc-Kg4" secondAttribute="leading" id="q7g-UU-3YO"/>
                             <constraint firstItem="1Ga-MW-svp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wvF-KX-pr8"/>
