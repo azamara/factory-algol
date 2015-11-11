@@ -8,11 +8,14 @@
 
 import UIKit
 import NotificationCenter
+import Alamofire
+import RxSwift
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var widgetTimeLabel: UILabel?
     
-    var result: String?
+    
+    var x:Int = 1;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,34 +28,37 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
+    func getSensor() {
+        SwaggerClientAPI.HomeAPI.homeGet(location: Double(2)).execute { (response, error) in
+            if response!.statusCode == 200,
+                let home: Home = response!.body as Home {
+                    self.homeLabel!.text = "\(home.home_id!)"
+                    self.temperatureLabel!.text = "\(home.temperature!)º"
+                    self.humidityLabel!.text = "\(home.humidity!)%"
+                    self.dustLabel!.text = "\(home.dust!)"
+                    
+                    widgetTimeLabel?.text = "\(NSDate.init()) \n dust: \(home.dust!)"
+            }
+        }
+    }
+    
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         
         print("widgetPerformUpdateWithCompletionHandler")
         // Perform any setup necessary in order to update the view.
         widgetTimeLabel?.text = "Still not sure!!!"
-        if let label = widgetTimeLabel
-        {
-            widgetTimeLabel?.text = "Still not sure!!!!"
-            let defaults = NSUserDefaults(suiteName: "group.io.jnw.Algol.AlgolWidget")
-            widgetTimeLabel?.text = "Still not sure!!!!!!"
-            if let timeString:String = defaults?.objectForKey("timeString") as? String
-            {
-                widgetTimeLabel?.text 
-                if self.result != nil {
-                    label.text = "You last ran the main app!!!"
-                } else {
-                    label.text = "You last ran the main app at: " + timeString
-                }
-                
-                self.result = timeString
-            }
-        }
+
+        self.getSensor()
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         
         completionHandler(NCUpdateResult.NewData)
+    }
+
+    @IBAction func btnRefresh(sender: AnyObject) {
+        self.getSensor()
     }
     
 }
