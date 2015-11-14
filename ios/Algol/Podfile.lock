@@ -2,18 +2,27 @@ PODS:
   - Alamofire (3.1.2)
   - Argo (2.2.0)
   - Curry (1.4.0)
+  - Nimble (3.0.0)
+  - PixateFreestyle (2.1.4)
+  - Quick (0.8.0)
   - RxSwift (2.0.0-beta.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - Argo (~> 2.2.0)
   - Curry (~> 1.4.0)
+  - Nimble (= 3.0.0)
+  - PixateFreestyle
+  - Quick (~> 0.8.0)
   - RxSwift (~> 2.0.0-beta.2)
 
 SPEC CHECKSUMS:
   Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
   Argo: 4f52a32b4cd913c204e5a45f420b3fccad3e3f24
   Curry: 294533187eedbf52db60a1e70c29b4f5c9f621c0
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  PixateFreestyle: 46d97070c7d647519dc367c70cbe84c189e07ca9
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
   RxSwift: 795720c22352cf1f62669ef3695b5df7e195103b
 
 COCOAPODS: 0.39.0
