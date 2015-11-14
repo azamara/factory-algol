@@ -49,6 +49,7 @@
 		07EF443F1BEF55F800E8190F /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF443E1BEF55F800E8190F /* HomeAPI.swift */; };
 		07EF44421BEF55FD00E8190F /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44401BEF55FD00E8190F /* Error.swift */; };
 		07EF44431BEF55FD00E8190F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44411BEF55FD00E8190F /* Home.swift */; };
+		07FEAC9D1BF76E6300576E5C /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEAC9C1BF76E6300576E5C /* WeatherViewController.swift */; };
 		2EA1F9C5757928F80034BE71 /* Pods_AlgolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979E5F198BB6EB868B57D233 /* Pods_AlgolTests.framework */; };
 		4DB5FB633AC03BE628ECAD75 /* Pods_AlgolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8F02B4B1AA55C9AC7832E2 /* Pods_AlgolUITests.framework */; };
 		E0F5925C9E1B99BE56342C84 /* Algol.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0F59912576411BE567920D4 /* Algol.xcdatamodeld */; };
@@ -106,12 +107,12 @@
 		070658971BF22B9000582C8E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0706589A1BF22B9000582C8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0706589C1BF22B9000582C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		070658A41BF22DEB00582C8E /* Algol.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Algol.entitlements; sourceTree = "<group>"; };
+		070658A41BF22DEB00582C8E /* Algol.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Algol.entitlements; path = ../Algol.entitlements; sourceTree = "<group>"; };
 		075EA8CD1BF704F50050FB11 /* AlgolTest2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgolTest2.swift; sourceTree = "<group>"; };
 		07A002271BEF0EFF002E687F /* Algol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algol.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07A0022A1BEF0EFF002E687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07A002341BEF0EFF002E687F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Support Files/Assets.xcassets"; sourceTree = "<group>"; };
-		07A002391BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A0022A1BEF0EFF002E687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		07A002341BEF0EFF002E687F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07A002391BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		07A0023E1BEF0EFF002E687F /* AlgolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A002421BEF0EFF002E687F /* AlgolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgolTests.swift; sourceTree = "<group>"; };
 		07A002441BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 		07EF443E1BEF55F800E8190F /* HomeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeAPI.swift; path = Swaggers/APIs/HomeAPI.swift; sourceTree = "<group>"; };
 		07EF44401BEF55FD00E8190F /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Swaggers/Models/Error.swift; sourceTree = "<group>"; };
 		07EF44411BEF55FD00E8190F /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home.swift; path = Swaggers/Models/Home.swift; sourceTree = "<group>"; };
+		07FEAC9C1BF76E6300576E5C /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		20A576E809B1C3DFA8C52FFF /* Pods-AlgolWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlgolWidget/Pods-AlgolWidget.release.xcconfig"; sourceTree = "<group>"; };
 		4087DD5469CC673495C29C67 /* Pods-AlgolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		65D67E991E5834A32791E67E /* Pods-AlgolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,17 +223,12 @@
 		07A002291BEF0EFF002E687F /* Algol */ = {
 			isa = PBXGroup;
 			children = (
-				070658A41BF22DEB00582C8E /* Algol.entitlements */,
-				07A0022A1BEF0EFF002E687F /* AppDelegate.swift */,
-				07A002341BEF0EFF002E687F /* Assets.xcassets */,
-				07A002391BEF0EFF002E687F /* Info.plist */,
-				E0F59CF4FA095B8E3AEC294F /* Views */,
-				E0F590DDF110C8A4B691112A /* Services */,
 				E0F5986E2F455A01716BBAD1 /* Models */,
+				E0F590DDF110C8A4B691112A /* Services */,
 				E0F5982F68BEA03D9BE89E96 /* Controllers */,
+				E0F59CF4FA095B8E3AEC294F /* Views */,
 				E0F593468F05F9240D864386 /* Support Files */,
 				E0F59FF5BB26EC1D15C538E3 /* Libs */,
-				E0F59912576411BE567920D4 /* Algol.xcdatamodeld */,
 			);
 			path = Algol;
 			sourceTree = "<group>";
@@ -325,6 +322,11 @@
 		E0F593468F05F9240D864386 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				07A002341BEF0EFF002E687F /* Assets.xcassets */,
+				07A0022A1BEF0EFF002E687F /* AppDelegate.swift */,
+				07A002391BEF0EFF002E687F /* Info.plist */,
+				070658A41BF22DEB00582C8E /* Algol.entitlements */,
+				E0F59912576411BE567920D4 /* Algol.xcdatamodeld */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -333,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F59C75D585148FE6F20250 /* ViewController.swift */,
+				07FEAC9C1BF76E6300576E5C /* WeatherViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -737,6 +740,7 @@
 				07EF44381BEF532400E8190F /* APIs.swift in Sources */,
 				07A0022B1BEF0EFF002E687F /* AppDelegate.swift in Sources */,
 				07EF44421BEF55FD00E8190F /* Error.swift in Sources */,
+				07FEAC9D1BF76E6300576E5C /* WeatherViewController.swift in Sources */,
 				07EF44391BEF532400E8190F /* Extensions.swift in Sources */,
 				E0F59E3D6E9BD732DB7850F7 /* ViewController.swift in Sources */,
 				E0F59AC8E80C47561F25D890 /* TaskQueue.swift in Sources */,
@@ -1110,7 +1114,8 @@
 				E0F59784D96E8BCB731697FE /* Algol.xcdatamodel */,
 			);
 			currentVersion = E0F59784D96E8BCB731697FE /* Algol.xcdatamodel */;
-			path = Algol.xcdatamodeld;
+			name = Algol.xcdatamodeld;
+			path = ../Algol.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
