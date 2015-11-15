@@ -13,6 +13,7 @@ import RxSwift
 
 class WeatherViewController: UIViewController {
     
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var dustLabel: UILabel!
@@ -25,6 +26,10 @@ class WeatherViewController: UIViewController {
 
     func getData() {
         print("START: WeatherViewController.getData")
+        let _now: NSDate = NSDate()
+        let now: NSDate = _now.dateByAddingTimeInterval(60 * 60 * 9)
+        print(now)
+        dateLabel!.text = "TODAY, \(now)"
         let queue = TaskQueue()
         
         // Town

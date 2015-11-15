@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Algol/Controllers/WeatherViewController.swift"
-            timestampString = "469291801.677271"
+            timestampString = "469294525.749728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "btnRefresh()"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Algol/Controllers/WeatherViewController.swift"
-            timestampString = "469288979.211505"
+            timestampString = "469294525.749728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "getData()"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,13 +90,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Algol/Controllers/WeatherViewController.swift"
-            timestampString = "469289181.588219"
+            timestampString = "469294525.749728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "getData()"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Algol.WeatherViewController.getData (Algol.WeatherViewController)() -&gt; ()"
+                  moduleName = "Algol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azamara/Development/workspace/william/factory-algol/ios/Algol/Algol/Controllers/WeatherViewController.swift"
+                  timestampString = "469293448.321553"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Algol.WeatherViewController.(getData (Algol.WeatherViewController) -&gt; () -&gt; ()).(closure #2)"
+                  moduleName = "Algol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azamara/Development/workspace/william/factory-algol/ios/Algol/Algol/Controllers/WeatherViewController.swift"
+                  timestampString = "469293448.32184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

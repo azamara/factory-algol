@@ -13,6 +13,7 @@ target 'Algol' do
     pod 'Argo', '~> 2.2.0'
     pod 'Curry', '~> 1.4.0'
     pod 'PixateFreestyle'
+    pod 'SwiftDate'
 end
 
 target 'AlgolWidget' do
