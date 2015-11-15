@@ -1,0 +1,617 @@
+[
+  {
+    "maskFrame" : null,
+    "children" : [
+      {
+        "maskFrame" : null,
+        "children" : [
+          {
+            "maskFrame" : null,
+            "id" : "2F21647E-28C0-40F4-823B-C787007AF013",
+            "visible" : true,
+            "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "EA625F38-3EC6-4A7F-8B0F-1FD3910F1CA5",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-Signal-EA625F38-3EC6-4A7F-8B0F-1FD3910F1CA5.png",
+                  "frame" : {
+                    "y" : 16,
+                    "x" : 12,
+                    "width" : 68,
+                    "height" : 11
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 16,
+                  "x" : 12,
+                  "width" : 68,
+                  "height" : 11
+                },
+                "name" : "Signal"
+              }
+            ],
+            "image" : {
+              "path" : "images\/Layer-Signal-2F21647E-28C0-40F4-823B-C787007AF013.png",
+              "frame" : {
+                "y" : 12,
+                "x" : 12,
+                "width" : 203,
+                "height" : 19
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 12,
+              "x" : 12,
+              "width" : 203,
+              "height" : 19
+            },
+            "name" : "Signal"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "E3916D5C-38BE-4CFD-B516-489266B42CD5",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-Time-E3916D5C-38BE-4CFD-B516-489266B42CD5.png",
+              "frame" : {
+                "y" : 12,
+                "x" : 320,
+                "width" : 108,
+                "height" : 19
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 12,
+              "x" : 320,
+              "width" : 108,
+              "height" : 19
+            },
+            "name" : "Time"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "2DD8724C-4F54-41BA-A3FD-40C3C2319A94",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-Blutooth-2DD8724C-4F54-41BA-A3FD-40C3C2319A94.png",
+              "frame" : {
+                "y" : 8,
+                "x" : 602,
+                "width" : 16,
+                "height" : 27
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 8,
+              "x" : 602,
+              "width" : 16,
+              "height" : 27
+            },
+            "name" : "Blutooth"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "5E4A495B-803F-4BC3-B733-848B8A077C5B",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-Battery-5E4A495B-803F-4BC3-B733-848B8A077C5B.png",
+              "frame" : {
+                "y" : 12,
+                "x" : 632,
+                "width" : 106,
+                "height" : 19
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 12,
+              "x" : 632,
+              "width" : 106,
+              "height" : 19
+            },
+            "name" : "Battery"
+          }
+        ],
+        "id" : "2194009B-3E72-4573-B0A6-58B9C3932810",
+        "visible" : true,
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 8,
+          "x" : 12,
+          "width" : 726,
+          "height" : 27
+        },
+        "name" : "StatusBar"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "622FE11F-1793-450D-ABD2-5255419B281F",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-BarHeader-622FE11F-1793-450D-ABD2-5255419B281F.png",
+          "frame" : {
+            "y" : 66,
+            "x" : 40,
+            "width" : 669,
+            "height" : 35
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 66,
+          "x" : 40,
+          "width" : 669,
+          "height" : 35
+        },
+        "name" : "BarHeader"
+      },
+      {
+        "maskFrame" : null,
+        "children" : [
+          {
+            "maskFrame" : null,
+            "id" : "C1060C7E-F338-437B-9CCE-DEABF25C37CB",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-Date-C1060C7E-F338-437B-9CCE-DEABF25C37CB.png",
+              "frame" : {
+                "y" : 145,
+                "x" : 243,
+                "width" : 263,
+                "height" : 19
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 145,
+              "x" : 243,
+              "width" : 263,
+              "height" : 19
+            },
+            "name" : "Date"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "F649D84C-BE62-4BD0-A8F1-31D3070385CC",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-Town-F649D84C-BE62-4BD0-A8F1-31D3070385CC.png",
+              "frame" : {
+                "y" : 192,
+                "x" : 254,
+                "width" : 243,
+                "height" : 63
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 192,
+              "x" : 254,
+              "width" : 243,
+              "height" : 63
+            },
+            "name" : "Town"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "57D79D5E-183D-4BE3-A806-E13D5D48B510",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-Location-57D79D5E-183D-4BE3-A806-E13D5D48B510.png",
+              "frame" : {
+                "y" : 266,
+                "x" : 211,
+                "width" : 328,
+                "height" : 20
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 266,
+              "x" : 211,
+              "width" : 328,
+              "height" : 20
+            },
+            "name" : "Location"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "1FC68971-52BF-4C97-9ED2-49DB05A65305",
+            "visible" : true,
+            "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "F5D20B44-B3A8-4764-8ED5-7793533C3CA5",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-HumidityValue-F5D20B44-B3A8-4764-8ED5-7793533C3CA5.png",
+                  "frame" : {
+                    "y" : 494,
+                    "x" : 106,
+                    "width" : 69,
+                    "height" : 30
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 494,
+                  "x" : 106,
+                  "width" : 69,
+                  "height" : 30
+                },
+                "name" : "HumidityValue"
+              },
+              {
+                "maskFrame" : null,
+                "id" : "D20E9D4C-BBBD-4003-BA8E-F351EBF77999",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-HumidityIcon-D20E9D4C-BBBD-4003-BA8E-F351EBF77999.png",
+                  "frame" : {
+                    "y" : 450,
+                    "x" : 131,
+                    "width" : 19,
+                    "height" : 30
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 450,
+                  "x" : 131,
+                  "width" : 19,
+                  "height" : 30
+                },
+                "name" : "HumidityIcon"
+              }
+            ],
+            "image" : {
+              "path" : "images\/Layer-Humidity-1FC68971-52BF-4C97-9ED2-49DB05A65305.png",
+              "frame" : {
+                "y" : 428,
+                "x" : 78,
+                "width" : 124,
+                "height" : 124
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 428,
+              "x" : 78,
+              "width" : 124,
+              "height" : 124
+            },
+            "name" : "Humidity"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "5C8011B1-3E81-4D53-BE9B-2382861A0759",
+            "visible" : true,
+            "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "3DFC1FFB-C110-49E2-89C8-5CBA23CADB7E",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-TemperatureValue-3DFC1FFB-C110-49E2-89C8-5CBA23CADB7E.png",
+                  "frame" : {
+                    "y" : 448,
+                    "x" : 329,
+                    "width" : 102,
+                    "height" : 53
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 448,
+                  "x" : 329,
+                  "width" : 102,
+                  "height" : 53
+                },
+                "name" : "TemperatureValue"
+              },
+              {
+                "maskFrame" : null,
+                "id" : "8D9CD2C3-8C61-4C31-A5AC-8F44C44D6B39",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-TemperatureIcon-8D9CD2C3-8C61-4C31-A5AC-8F44C44D6B39.png",
+                  "frame" : {
+                    "y" : 385,
+                    "x" : 367,
+                    "width" : 16,
+                    "height" : 40
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 385,
+                  "x" : 367,
+                  "width" : 16,
+                  "height" : 40
+                },
+                "name" : "TemperatureIcon"
+              }
+            ],
+            "image" : {
+              "path" : "images\/Layer-Temperature-5C8011B1-3E81-4D53-BE9B-2382861A0759.png",
+              "frame" : {
+                "y" : 348,
+                "x" : 273,
+                "width" : 204,
+                "height" : 204
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 348,
+              "x" : 273,
+              "width" : 204,
+              "height" : 204
+            },
+            "name" : "Temperature"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "776B071C-1EAD-46BD-AC86-270EE77774A0",
+            "visible" : true,
+            "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "009604CA-2103-4A47-AFB7-B099534FF965",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-DustValue-009604CA-2103-4A47-AFB7-B099534FF965.png",
+                  "frame" : {
+                    "y" : 492,
+                    "x" : 576,
+                    "width" : 66,
+                    "height" : 31
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 492,
+                  "x" : 576,
+                  "width" : 66,
+                  "height" : 31
+                },
+                "name" : "DustValue"
+              },
+              {
+                "maskFrame" : null,
+                "id" : "35206746-ABAD-45E0-8A00-998A9C1A454E",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-DustIcon-35206746-ABAD-45E0-8A00-998A9C1A454E.png",
+                  "frame" : {
+                    "y" : 450,
+                    "x" : 595,
+                    "width" : 30,
+                    "height" : 30
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 450,
+                  "x" : 595,
+                  "width" : 30,
+                  "height" : 30
+                },
+                "name" : "DustIcon"
+              }
+            ],
+            "image" : {
+              "path" : "images\/Layer-Dust-776B071C-1EAD-46BD-AC86-270EE77774A0.png",
+              "frame" : {
+                "y" : 428,
+                "x" : 548,
+                "width" : 124,
+                "height" : 124
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 428,
+              "x" : 548,
+              "width" : 124,
+              "height" : 124
+            },
+            "name" : "Dust"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "AD5F8CCE-2919-4E10-A5DB-93C2F25589A7",
+            "visible" : true,
+            "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "D28B5CFC-6787-44DB-8B60-F6906E05B56D",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-YAxisLeft-D28B5CFC-6787-44DB-8B60-F6906E05B56D.png",
+                  "frame" : {
+                    "y" : 727,
+                    "x" : 30,
+                    "width" : 38,
+                    "height" : 471
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 727,
+                  "x" : 30,
+                  "width" : 38,
+                  "height" : 471
+                },
+                "name" : "YAxisLeft"
+              },
+              {
+                "maskFrame" : null,
+                "id" : "E326807D-2F35-4A1E-8D7E-1F3702C7C8EC",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-YAxisRight-E326807D-2F35-4A1E-8D7E-1F3702C7C8EC.png",
+                  "frame" : {
+                    "y" : 727,
+                    "x" : 670,
+                    "width" : 49,
+                    "height" : 471
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 727,
+                  "x" : 670,
+                  "width" : 49,
+                  "height" : 471
+                },
+                "name" : "YAxisRight"
+              },
+              {
+                "maskFrame" : null,
+                "id" : "04BEACE3-BB5B-4B1A-8F02-76DD62551183",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-Grid-04BEACE3-BB5B-4B1A-8F02-76DD62551183.png",
+                  "frame" : {
+                    "y" : 779,
+                    "x" : 0,
+                    "width" : 750,
+                    "height" : 456
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 779,
+                  "x" : 0,
+                  "width" : 750,
+                  "height" : 456
+                },
+                "name" : "Grid"
+              },
+              {
+                "maskFrame" : null,
+                "id" : "29D6C46A-4963-4357-9DD3-F1654EA787F5",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-XAxis-29D6C46A-4963-4357-9DD3-F1654EA787F5.png",
+                  "frame" : {
+                    "y" : 1277,
+                    "x" : 31,
+                    "width" : 687,
+                    "height" : 16
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 1277,
+                  "x" : 31,
+                  "width" : 687,
+                  "height" : 16
+                },
+                "name" : "XAxis"
+              }
+            ],
+            "image" : {
+              "path" : "images\/Layer-Chart-AD5F8CCE-2919-4E10-A5DB-93C2F25589A7.png",
+              "frame" : {
+                "y" : 727,
+                "x" : 0,
+                "width" : 750,
+                "height" : 607
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 727,
+              "x" : 0,
+              "width" : 750,
+              "height" : 607
+            },
+            "name" : "Chart"
+          }
+        ],
+        "id" : "F2775AC3-1699-4F64-86B0-874BA6F16408",
+        "visible" : true,
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 145,
+          "x" : 0,
+          "width" : 750,
+          "height" : 1189
+        },
+        "name" : "Content"
+      }
+    ],
+    "id" : "1D4264C3-1C6B-4F14-BDD4-93ADC9210928",
+    "visible" : true,
+    "imageType" : "png",
+    "layerFrame" : {
+      "y" : 0,
+      "x" : 0,
+      "width" : 750,
+      "height" : 1334
+    },
+    "name" : "Weather"
+  }
+]
