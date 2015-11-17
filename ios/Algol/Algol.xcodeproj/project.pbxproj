@@ -38,10 +38,10 @@
 		078A72291BF39E35006461C3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44341BEF532400E8190F /* Models.swift */; };
 		078A722D1BF3A11E006461C3 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F59D7204EC78392607C767 /* TaskQueue.swift */; };
 		07A0022B1BEF0EFF002E687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0022A1BEF0EFF002E687F /* AppDelegate.swift */; };
-		07A002351BEF0EFF002E687F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A002341BEF0EFF002E687F /* Assets.xcassets */; };
 		07A002431BEF0EFF002E687F /* AlgolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A002421BEF0EFF002E687F /* AlgolTests.swift */; };
 		07A0024E1BEF0EFF002E687F /* AlgolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0024D1BEF0EFF002E687F /* AlgolUITests.swift */; };
-		07D4DD401BFB4EE6005F6A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A002341BEF0EFF002E687F /* Assets.xcassets */; };
+		07D4DD421BFB55E6005F6A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D4DD411BFB55E6005F6A36 /* Assets.xcassets */; };
+		07D4DD431BFB55E6005F6A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D4DD411BFB55E6005F6A36 /* Assets.xcassets */; };
 		07EF44351BEF532400E8190F /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442E1BEF532400E8190F /* AlamofireImplementations.swift */; };
 		07EF44361BEF532400E8190F /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442F1BEF532400E8190F /* APIHelper.swift */; };
 		07EF44381BEF532400E8190F /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44311BEF532400E8190F /* APIs.swift */; };
@@ -112,7 +112,6 @@
 		075EA8CD1BF704F50050FB11 /* AlgolTest2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgolTest2.swift; sourceTree = "<group>"; };
 		07A002271BEF0EFF002E687F /* Algol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A0022A1BEF0EFF002E687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		07A002341BEF0EFF002E687F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A002391BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		07A0023E1BEF0EFF002E687F /* AlgolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A002421BEF0EFF002E687F /* AlgolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgolTests.swift; sourceTree = "<group>"; };
@@ -121,6 +120,7 @@
 		07A0024D1BEF0EFF002E687F /* AlgolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgolUITests.swift; sourceTree = "<group>"; };
 		07A0024F1BEF0EFF002E687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07B26E6B1BF234F000001401 /* AlgolWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AlgolWidget.entitlements; sourceTree = "<group>"; };
+		07D4DD411BFB55E6005F6A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07EF442E1BEF532400E8190F /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireImplementations.swift; path = Swaggers/AlamofireImplementations.swift; sourceTree = "<group>"; };
 		07EF442F1BEF532400E8190F /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelper.swift; path = Swaggers/APIHelper.swift; sourceTree = "<group>"; };
 		07EF44311BEF532400E8190F /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIs.swift; path = Swaggers/APIs.swift; sourceTree = "<group>"; };
@@ -323,7 +323,7 @@
 		E0F593468F05F9240D864386 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				07A002341BEF0EFF002E687F /* Assets.xcassets */,
+				07D4DD411BFB55E6005F6A36 /* Assets.xcassets */,
 				07A0022A1BEF0EFF002E687F /* AppDelegate.swift */,
 				07A002391BEF0EFF002E687F /* Info.plist */,
 				070658A41BF22DEB00582C8E /* Algol.entitlements */,
@@ -516,7 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D4DD401BFB4EE6005F6A36 /* Assets.xcassets in Resources */,
+				07D4DD431BFB55E6005F6A36 /* Assets.xcassets in Resources */,
 				0706589B1BF22B9000582C8E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,9 +525,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A002351BEF0EFF002E687F /* Assets.xcassets in Resources */,
 				E0F59765BE21959891AC86FB /* Main.storyboard in Resources */,
 				E0F59E0047F6FDEB74B47B8B /* LaunchScreen.storyboard in Resources */,
+				07D4DD421BFB55E6005F6A36 /* Assets.xcassets in Resources */,
 				E0F5944A99454FEE8E6E26FB /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -962,6 +962,7 @@
 			baseConfigurationReference = 8D2D0E340307AB3BD3D7C11E /* Pods-Algol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_ENTITLEMENTS = Algol/Algol.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -971,10 +972,12 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Algol/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -983,6 +986,7 @@
 			baseConfigurationReference = F0E0F1346AFAF7A3D61CB1FC /* Pods-Algol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_ENTITLEMENTS = Algol/Algol.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -992,10 +996,12 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Algol/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
