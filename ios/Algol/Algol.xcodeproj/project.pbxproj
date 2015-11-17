@@ -41,6 +41,7 @@
 		07A002351BEF0EFF002E687F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A002341BEF0EFF002E687F /* Assets.xcassets */; };
 		07A002431BEF0EFF002E687F /* AlgolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A002421BEF0EFF002E687F /* AlgolTests.swift */; };
 		07A0024E1BEF0EFF002E687F /* AlgolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0024D1BEF0EFF002E687F /* AlgolUITests.swift */; };
+		07D4DD401BFB4EE6005F6A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A002341BEF0EFF002E687F /* Assets.xcassets */; };
 		07EF44351BEF532400E8190F /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442E1BEF532400E8190F /* AlamofireImplementations.swift */; };
 		07EF44361BEF532400E8190F /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF442F1BEF532400E8190F /* APIHelper.swift */; };
 		07EF44381BEF532400E8190F /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44311BEF532400E8190F /* APIs.swift */; };
@@ -515,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D4DD401BFB4EE6005F6A36 /* Assets.xcassets in Resources */,
 				0706589B1BF22B9000582C8E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
