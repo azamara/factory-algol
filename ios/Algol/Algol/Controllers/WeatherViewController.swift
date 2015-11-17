@@ -100,8 +100,18 @@ class WeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        toggleRefreshAnimation(true)
-        getData()
+        
+        JTSplashView.splashViewWithBackgroundColor(nil, circleColor: UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0), circleSize: nil)
+        // Simulate state when we want to hide the splash view
+        NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("hideSplashView"), userInfo: nil, repeats: false)
+    }
+    
+    func hideSplashView() {
+        JTSplashView.finishWithCompletion { () -> Void in
+            UIApplication.sharedApplication().statusBarHidden = false
+            self.toggleRefreshAnimation(true)
+            self.getData()
+        }
     }
     
     override func didReceiveMemoryWarning() {

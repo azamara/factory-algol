@@ -50,6 +50,7 @@
 		07EF443F1BEF55F800E8190F /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF443E1BEF55F800E8190F /* HomeAPI.swift */; };
 		07EF44421BEF55FD00E8190F /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44401BEF55FD00E8190F /* Error.swift */; };
 		07EF44431BEF55FD00E8190F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF44411BEF55FD00E8190F /* Home.swift */; };
+		07F03D771BFB630600631F1B /* JTSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F03D761BFB630600631F1B /* JTSplashView.swift */; };
 		07FEAC9D1BF76E6300576E5C /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEAC9C1BF76E6300576E5C /* WeatherViewController.swift */; };
 		2EA1F9C5757928F80034BE71 /* Pods_AlgolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979E5F198BB6EB868B57D233 /* Pods_AlgolTests.framework */; };
 		4DB5FB633AC03BE628ECAD75 /* Pods_AlgolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8F02B4B1AA55C9AC7832E2 /* Pods_AlgolUITests.framework */; };
@@ -129,6 +130,7 @@
 		07EF443E1BEF55F800E8190F /* HomeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeAPI.swift; path = Swaggers/APIs/HomeAPI.swift; sourceTree = "<group>"; };
 		07EF44401BEF55FD00E8190F /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Swaggers/Models/Error.swift; sourceTree = "<group>"; };
 		07EF44411BEF55FD00E8190F /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home.swift; path = Swaggers/Models/Home.swift; sourceTree = "<group>"; };
+		07F03D761BFB630600631F1B /* JTSplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JTSplashView.swift; path = ../../JTSplashView.swift; sourceTree = "<group>"; };
 		07FEAC9C1BF76E6300576E5C /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		20A576E809B1C3DFA8C52FFF /* Pods-AlgolWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlgolWidget/Pods-AlgolWidget.release.xcconfig"; sourceTree = "<group>"; };
 		4087DD5469CC673495C29C67 /* Pods-AlgolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 			children = (
 				07EF442D1BEF52D700E8190F /* Swaggers */,
 				E0F59D7204EC78392607C767 /* TaskQueue.swift */,
+				07F03D761BFB630600631F1B /* JTSplashView.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -743,6 +746,7 @@
 				07A0022B1BEF0EFF002E687F /* AppDelegate.swift in Sources */,
 				07EF44421BEF55FD00E8190F /* Error.swift in Sources */,
 				07FEAC9D1BF76E6300576E5C /* WeatherViewController.swift in Sources */,
+				07F03D771BFB630600631F1B /* JTSplashView.swift in Sources */,
 				07EF44391BEF532400E8190F /* Extensions.swift in Sources */,
 				E0F59E3D6E9BD732DB7850F7 /* ViewController.swift in Sources */,
 				E0F59AC8E80C47561F25D890 /* TaskQueue.swift in Sources */,
