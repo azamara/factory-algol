@@ -1,4 +1,4 @@
-Toy Java ATDD Example !!
+Toy Java ATDD Example 
 ===
 
 
