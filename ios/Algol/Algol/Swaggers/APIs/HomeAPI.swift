@@ -9,7 +9,7 @@ import Alamofire
 
 extension SwaggerClientAPI {
     
-    public class HomeAPI: APIBase {
+    open class HomeAPI: APIBase {
     
         /**
          
@@ -30,12 +30,12 @@ extension SwaggerClientAPI {
 
          - returns: RequestBuilder<Home> 
          */
-        public class func homeGet(location location: Double) -> RequestBuilder<Home> {
+        open class func homeGet(location: Double) -> RequestBuilder<Home> {
             let path = "/home"
             let URLString = SwaggerClientAPI.basePath + path
             
             let nillableParameters: [String:AnyObject?] = [
-                "location": location
+                "location": location as AnyObject
             ]
             let parameters = APIHelper.rejectNil(nillableParameters)
 

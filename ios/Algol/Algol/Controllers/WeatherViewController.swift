@@ -26,8 +26,8 @@ class WeatherViewController: UIViewController {
 
     func getData() {
         print("START: WeatherViewController.getData")
-        let _now: NSDate = NSDate()
-        let now: NSDate = _now.dateByAddingTimeInterval(60 * 60 * 9)
+        let _now: Date = Date()
+        let now: Date = _now.addingTimeInterval(60 * 60 * 9)
         print(now)
         dateLabel!.text = "TODAY, \(now)"
         let queue = TaskQueue()
@@ -57,13 +57,13 @@ class WeatherViewController: UIViewController {
     }
     
     func startLoading() {
-        temperatureLabel?.hidden = true
-        print("\(temperatureLabel.hidden)")
-        humidityLabel?.hidden = true
-        dustLabel?.hidden = true
-        imgWater?.hidden = true
-        imgTemperature?.hidden = true
-        imgDust?.hidden = true
+        temperatureLabel?.isHidden = true
+        print("\(temperatureLabel.isHidden)")
+        humidityLabel?.isHidden = true
+        dustLabel?.isHidden = true
+        imgWater?.isHidden = true
+        imgTemperature?.isHidden = true
+        imgDust?.isHidden = true
         
         loadingWater?.startAnimating()
         loadingTemperature?.startAnimating()
@@ -72,12 +72,12 @@ class WeatherViewController: UIViewController {
     }
     
     func stopLoading() {
-        temperatureLabel?.hidden = false
-        humidityLabel?.hidden = false
-        dustLabel?.hidden = false
-        imgWater?.hidden = false
-        imgTemperature?.hidden = false
-        imgDust?.hidden = false
+        temperatureLabel?.isHidden = false
+        humidityLabel?.isHidden = false
+        dustLabel?.isHidden = false
+        imgWater?.isHidden = false
+        imgTemperature?.isHidden = false
+        imgDust?.isHidden = false
 
         loadingWater?.stopAnimating()
         loadingTemperature?.stopAnimating()
@@ -85,14 +85,14 @@ class WeatherViewController: UIViewController {
         print("Stop Loading")
     }
     
-    func toggleRefreshAnimation(on: Bool) {
+    func toggleRefreshAnimation(_ on: Bool) {
         if on {
             startLoading()
         } else {
             let delta: Int64 = 1 * Int64(NSEC_PER_SEC)
-            let time = dispatch_time(DISPATCH_TIME_NOW, delta)
+            let time = DispatchTime.now() + Double(delta) / Double(NSEC_PER_SEC)
             
-            dispatch_after(time, dispatch_get_main_queue(), {
+            DispatchQueue.main.asyncAfter(deadline: time, execute: {
                 self.stopLoading()
             });
         }
@@ -103,12 +103,12 @@ class WeatherViewController: UIViewController {
         
         JTSplashView.splashViewWithBackgroundColor(nil, circleColor: UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0), circleSize: nil)
         // Simulate state when we want to hide the splash view
-        NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("hideSplashView"), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(WeatherViewController.hideSplashView), userInfo: nil, repeats: false)
     }
     
     func hideSplashView() {
         JTSplashView.finishWithCompletion { () -> Void in
-            UIApplication.sharedApplication().statusBarHidden = false
+            UIApplication.shared.isStatusBarHidden = false
             self.toggleRefreshAnimation(true)
             self.getData()
         }
@@ -119,8 +119,8 @@ class WeatherViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     @IBAction func btnRefresh() {

@@ -6,20 +6,20 @@
 
 import Foundation
 
-public class SwaggerClientAPI {
-    public static var basePath = "http://api.jnw.io/v1/summer"
-    public static var credential: NSURLCredential?
-    public static var customHeaders: [String:String] = [:]  
+open class SwaggerClientAPI {
+    open static var basePath = "http://api.jnw.io/v1/summer"
+    open static var credential: URLCredential?
+    open static var customHeaders: [String:String] = [:]  
     static var requestBuilderFactory: RequestBuilderFactory = AlamofireRequestBuilderFactory()
 }
 
-public class APIBase {
-    func toParameters(encodable: JSONEncodable?) -> [String: AnyObject]? {
+open class APIBase {
+    func toParameters(_ encodable: JSONEncodable?) -> [String: AnyObject]? {
         let encoded: AnyObject? = encodable?.encodeToJSON()
 
         if encoded! is [AnyObject] {
             var dictionary = [String:AnyObject]()
-            for (index, item) in (encoded as! [AnyObject]).enumerate() {
+            for (index, item) in (encoded as! [AnyObject]).enumerated() {
                 dictionary["\(index)"] = item
             }
             return dictionary
@@ -29,8 +29,8 @@ public class APIBase {
     }
 }
 
-public class RequestBuilder<T> {
-    var credential: NSURLCredential?
+open class RequestBuilder<T> {
+    var credential: URLCredential?
     var headers: [String:String] = [:]
     let parameters: [String:AnyObject]?
     let isBody: Bool
@@ -46,22 +46,22 @@ public class RequestBuilder<T> {
         addHeaders(SwaggerClientAPI.customHeaders)
     }
     
-    public func addHeaders(aHeaders:[String:String]) {
+    open func addHeaders(_ aHeaders:[String:String]) {
         for (header, value) in aHeaders {
             headers[header] = value
         }
     }
     
-    public func execute(completion: (response: Response<T>?, erorr: ErrorType?) -> Void) { }
+    open func execute(_ completion: (_ response: Response<T>?, _ erorr: Error?) -> Void) { }
 
-    public func addHeader(name name: String, value: String) -> Self {
+    open func addHeader(name: String, value: String) -> Self {
         if !value.isEmpty {
             headers[name] = value
         }
         return self
     }
     
-    public func addCredential() -> Self {
+    open func addCredential() -> Self {
         self.credential = SwaggerClientAPI.credential
         return self
     }
