@@ -8,11 +8,11 @@
 import Foundation
 
 
-public class Error: JSONEncodable {
+open class Error: JSONEncodable {
 
-    public var code: Int?
-    public var message: String?
-    public var fields: String?
+    open var code: Int?
+    open var message: String?
+    open var fields: String?
     
 
     public init() {}
@@ -20,10 +20,10 @@ public class Error: JSONEncodable {
     // MARK: JSONEncodable
     func encodeToJSON() -> AnyObject {
         var nillableDictionary = [String:AnyObject?]()
-        nillableDictionary["code"] = self.code
-        nillableDictionary["message"] = self.message
-        nillableDictionary["fields"] = self.fields
+        nillableDictionary["code"] = self.code as AnyObject
+        nillableDictionary["message"] = self.message as AnyObject
+        nillableDictionary["fields"] = self.fields as AnyObject
         let dictionary: [String:AnyObject] = APIHelper.rejectNil(nillableDictionary) ?? [:]
-        return dictionary
+        return dictionary as AnyObject
     }
 }

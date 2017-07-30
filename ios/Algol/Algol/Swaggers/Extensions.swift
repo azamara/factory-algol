@@ -7,30 +7,30 @@
 import Alamofire
 
 extension Bool: JSONEncodable {
-    func encodeToJSON() -> AnyObject { return self }
+    func encodeToJSON() -> AnyObject { return self as AnyObject }
 }
 
 extension Float: JSONEncodable {
-    func encodeToJSON() -> AnyObject { return self }
+    func encodeToJSON() -> AnyObject { return self as AnyObject }
 }
 
 extension Int: JSONEncodable {
-    func encodeToJSON() -> AnyObject { return self }
+    func encodeToJSON() -> AnyObject { return self as AnyObject }
 }
 
 extension Double: JSONEncodable {
-    func encodeToJSON() -> AnyObject { return self }
+    func encodeToJSON() -> AnyObject { return self as AnyObject }
 }
 
 extension String: JSONEncodable {
-    func encodeToJSON() -> AnyObject { return self }
+    func encodeToJSON() -> AnyObject { return self as AnyObject }
 }
 
-private func encodeIfPossible<T>(object: T) -> AnyObject {
+private func encodeIfPossible<T>(_ object: T) -> AnyObject {
     if object is JSONEncodable {
         return (object as! JSONEncodable).encodeToJSON()
     } else {
-        return object as! AnyObject
+        return object as AnyObject
     }
 }
 
@@ -46,20 +46,20 @@ extension Dictionary: JSONEncodable {
         for (key, value) in self {
             dictionary[key as! NSObject] = encodeIfPossible(value)
         }
-        return dictionary
+        return dictionary as AnyObject
     }
 }
 
 
-private let dateFormatter: NSDateFormatter = {
-    let dateFormatter = NSDateFormatter()
+private let dateFormatter: DateFormatter = {
+    let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
     return dateFormatter
 }()
 
 extension NSDate: JSONEncodable {
     func encodeToJSON() -> AnyObject {
-        return dateFormatter.stringFromDate(self)
+        return dateFormatter.string(from: self as Date) as (Date) as (Date)
     }
 }
 

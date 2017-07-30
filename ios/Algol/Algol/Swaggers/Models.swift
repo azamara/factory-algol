@@ -10,10 +10,10 @@ protocol JSONEncodable {
     func encodeToJSON() -> AnyObject
 }
 
-public class Response<T> {
-    public let statusCode: Int
-    public let header: [String: String]
-    public let body: T
+open class Response<T> {
+    open let statusCode: Int
+    open let header: [String: String]
+    open let body: T
 
     public init(statusCode: Int, header: [String: String], body: T) {
         self.statusCode = statusCode
@@ -21,7 +21,7 @@ public class Response<T> {
         self.body = body
     }
 
-    public convenience init(response: NSHTTPURLResponse, body: T) {
+    public convenience init(response: HTTPURLResponse, body: T) {
         let rawHeader = response.allHeaderFields
         var header = [String:String]()
         for (key, value) in rawHeader {
@@ -31,21 +31,68 @@ public class Response<T> {
     }
 }
 
-private var once = dispatch_once_t()
+private var once = Int()
 class Decoders {
-    static private var decoders = Dictionary<String, ((AnyObject) -> AnyObject)>()
+    private static var __once: () = {
+            let formatters = [
+                "yyyy-MM-dd",
+                "yyyy-MM-dd'T'HH:mm:ssZZZZZ",
+                "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ",
+                "yyyy-MM-dd'T'HH:mm:ss'Z'"
+            ].map { (format: String) -> DateFormatter in
+                let formatter = DateFormatter()
+                formatter.dateFormat = format
+                return formatter
+            }
+            // Decoder for NSDate
+            Decoders.addDecoder(clazz: NSDate.self) { (source: AnyObject) -> Date in
+                let sourceString = source as! String
+                for formatter in formatters {
+                    if let date = formatter.date(from: sourceString) {
+                        return date
+                    }
+                }
+                fatalError("formatter failed to parse \(sourceString)")
+            } 
+
+			// Decoder for Home
+            Decoders.addDecoder(clazz: Home.self) { (source: AnyObject) -> Home in
+                let sourceDictionary = source as! [AnyHashable: Any]
+                let instance = Home()
+                instance.home_id = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["home_id"] as AnyObject)
+                instance.humidity = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["humidity"] as AnyObject)
+                instance.temperature = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["temperature"] as AnyObject)
+                instance.sound = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["sound"] as AnyObject)
+                instance.vibration = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["vibration"] as AnyObject)
+                instance.dust = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["dust"] as AnyObject)
+                return instance
+            }
+			
+
+			// Decoder for Error
+            Decoders.addDecoder(clazz: Error.self) { (source: AnyObject) -> Error in
+                let sourceDictionary = source as! [AnyHashable: Any]
+                let instance = Error()
+                instance.code = Decoders.decodeOptional(clazz: Int.self, source: sourceDictionary["code"] as AnyObject)
+                instance.message = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["message"] as AnyObject)
+                instance.fields = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["fields"] as AnyObject)
+                return instance
+            }
+			
+        }()
+    static fileprivate var decoders = Dictionary<String, ((AnyObject) -> AnyObject)>()
     
-    static func addDecoder<T>(clazz clazz: T.Type, decoder: ((AnyObject) -> T)) {
+    static func addDecoder<T>(clazz: T.Type, decoder: @escaping ((AnyObject) -> T)) {
         let key = "\(T.self)"
-        decoders[key] = { decoder($0) as! AnyObject }
+        decoders[key] = { decoder($0) as AnyObject }
     }
     
-    static func decode<T>(clazz clazz: [T].Type, source: AnyObject) -> [T] {
+    static func decode<T>(clazz: [T].Type, source: AnyObject) -> [T] {
         let array = source as! [AnyObject]
         return array.map { Decoders.decode(clazz: T.self, source: $0) }
     }
     
-    static func decode<T, Key: Hashable>(clazz clazz: [Key:T].Type, source: AnyObject) -> [Key:T] {
+    static func decode<T, Key: Hashable>(clazz: [Key:T].Type, source: AnyObject) -> [Key:T] {
         let sourceDictinoary = source as! [Key: AnyObject]
         var dictionary = [Key:T]()
         for (key, value) in sourceDictinoary {
@@ -54,7 +101,7 @@ class Decoders {
         return dictionary
     }
     
-    static func decode<T>(clazz clazz: T.Type, source: AnyObject) -> T {
+    static func decode<T>(clazz: T.Type, source: AnyObject) -> T {
         initialize()
         if source is T {
             return source as! T
@@ -68,7 +115,7 @@ class Decoders {
         }
     }
 
-    static func decodeOptional<T>(clazz clazz: T.Type, source: AnyObject?) -> T? {
+    static func decodeOptional<T>(clazz: T.Type, source: AnyObject?) -> T? {
         if source is NSNull {
             return nil
         }
@@ -77,7 +124,7 @@ class Decoders {
         }
     }
 
-    static func decodeOptional<T>(clazz clazz: [T].Type, source: AnyObject?) -> [T]? {
+    static func decodeOptional<T>(clazz: [T].Type, source: AnyObject?) -> [T]? {
         if source is NSNull {
             return nil
         }
@@ -86,7 +133,7 @@ class Decoders {
         }
     }
 
-    static func decodeOptional<T, Key: Hashable>(clazz clazz: [Key:T].Type, source: AnyObject?) -> [Key:T]? {
+    static func decodeOptional<T, Key: Hashable>(clazz: [Key:T].Type, source: AnyObject?) -> [Key:T]? {
         if source is NSNull {
             return nil
         }
@@ -95,53 +142,7 @@ class Decoders {
         }
     }
 	
-    static private func initialize() {
-        dispatch_once(&once) {
-            let formatters = [
-                "yyyy-MM-dd",
-                "yyyy-MM-dd'T'HH:mm:ssZZZZZ",
-                "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ",
-                "yyyy-MM-dd'T'HH:mm:ss'Z'"
-            ].map { (format: String) -> NSDateFormatter in
-                let formatter = NSDateFormatter()
-                formatter.dateFormat = format
-                return formatter
-            }
-            // Decoder for NSDate
-            Decoders.addDecoder(clazz: NSDate.self) { (source: AnyObject) -> NSDate in
-                let sourceString = source as! String
-                for formatter in formatters {
-                    if let date = formatter.dateFromString(sourceString) {
-                        return date
-                    }
-                }
-                fatalError("formatter failed to parse \(sourceString)")
-            } 
-
-			// Decoder for Home
-            Decoders.addDecoder(clazz: Home.self) { (source: AnyObject) -> Home in
-                let sourceDictionary = source as! [NSObject:AnyObject]
-                let instance = Home()
-                instance.home_id = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["home_id"])
-                instance.humidity = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["humidity"])
-                instance.temperature = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["temperature"])
-                instance.sound = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["sound"])
-                instance.vibration = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["vibration"])
-                instance.dust = Decoders.decodeOptional(clazz: Double.self, source: sourceDictionary["dust"])
-                return instance
-            }
-			
-
-			// Decoder for Error
-            Decoders.addDecoder(clazz: Error.self) { (source: AnyObject) -> Error in
-                let sourceDictionary = source as! [NSObject:AnyObject]
-                let instance = Error()
-                instance.code = Decoders.decodeOptional(clazz: Int.self, source: sourceDictionary["code"])
-                instance.message = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["message"])
-                instance.fields = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["fields"])
-                return instance
-            }
-			
-        }
+    static fileprivate func initialize() {
+        _ = Decoders.__once
     }
 }

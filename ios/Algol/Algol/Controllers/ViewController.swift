@@ -56,7 +56,7 @@ class ViewController: UIViewController {
                     print(n)
             }
             
-            NSThread.sleepForTimeInterval(2)
+            Thread.sleep(forTimeInterval: 2)
             
             subscription.dispose()
             
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func myInterval(interval: NSTimeInterval) -> Observable<Int> {
+    func myInterval(_ interval: TimeInterval) -> Observable<Int> {
         return create { observer in
             print("Subscribed")
             let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
@@ -133,7 +133,7 @@ class ViewController: UIViewController {
         queue.run()
     }
     
-    @IBAction func btnRefresh(sender: AnyObject) {
+    @IBAction func btnRefresh(_ sender: AnyObject) {
         getSensor()
     }
 

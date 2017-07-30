@@ -1,31 +1,36 @@
 PODS:
-  - Alamofire (3.1.2)
-  - Argo (2.2.0)
-  - Curry (1.4.0)
-  - Nimble (3.0.0)
+  - Alamofire (4.5.0)
+  - Argo (4.1.2):
+    - Runes (>= 4.0.0)
+  - Curry (3.0.0)
+  - Nimble (7.0.1)
   - PixateFreestyle (2.1.4)
-  - Quick (0.8.0)
-  - RxSwift (2.0.0-beta.2)
-  - SwiftDate (1.2)
+  - Quick (1.1.0)
+  - Runes (4.1.0)
+  - RxSwift (3.6.1)
+  - SwiftDate (4.1.7)
 
 DEPENDENCIES:
-  - Alamofire (~> 3.0)
-  - Argo (~> 2.2.0)
-  - Curry (~> 1.4.0)
-  - Nimble (= 3.0.0)
+  - Alamofire (= 4.5.0)
+  - Argo (= 4.1.2)
+  - Curry (= 3.0.0)
+  - Nimble (= 7.0.1)
   - PixateFreestyle
-  - Quick (~> 0.8.0)
-  - RxSwift (~> 2.0.0-beta.2)
+  - Quick (= 1.1.0)
+  - RxSwift (= 3.6.1)
   - SwiftDate
 
 SPEC CHECKSUMS:
-  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
-  Argo: 4f52a32b4cd913c204e5a45f420b3fccad3e3f24
-  Curry: 294533187eedbf52db60a1e70c29b4f5c9f621c0
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Argo: 5db06502fc1222d83011f574243089dab25202ff
+  Curry: eb3d2c75aec678b3cc7fb2729d2ad6dd121531d1
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   PixateFreestyle: 46d97070c7d647519dc367c70cbe84c189e07ca9
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  RxSwift: 795720c22352cf1f62669ef3695b5df7e195103b
-  SwiftDate: 49ebd4efb5f82336cfc2b1d8a6622f47d4b17370
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  Runes: 72a67a5bbbe1b5fdae08b5a01b10c60d83fc69aa
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SwiftDate: 029be76691ee89176da3a46c7df3415b6734bc5b
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: caf4310a7c31e921baed3c08cfb6cb108b0a36f6
+
+COCOAPODS: 1.2.1

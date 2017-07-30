@@ -20,17 +20,17 @@ class AlamofireRequestBuilder<T>: RequestBuilder<T> {
         super.init(method: method, URLString: URLString, parameters: parameters, isBody: isBody)
     }
 
-    override func execute(completion: (response: Response<T>?, erorr: ErrorType?) -> Void) {
-        let managerId = NSUUID().UUIDString
+    override func execute(_ completion: @escaping (_ response: Response<T>?, _ erorr: Error?) -> Void) {
+        let managerId = NSUUID().uuidString
         // Create a new manager for each request to customize its request header
-        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        configuration.HTTPAdditionalHeaders = buildHeaders()
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = buildHeaders()
         let manager = Alamofire.Manager(configuration: configuration)
         managerStore[managerId] = manager
 
         let encoding = isBody ? Alamofire.ParameterEncoding.JSON : Alamofire.ParameterEncoding.URL
         let xMethod = Alamofire.Method(rawValue: method)
-        let fileKeys = parameters == nil ? [] : parameters!.filter { $1.isKindOfClass(NSURL) }
+        let fileKeys = parameters == nil ? [] : parameters!.filter { $1.isKind(NSURL) }
                                                            .map { $0.0 }
 
         if fileKeys.count > 0 {
@@ -70,7 +70,7 @@ class AlamofireRequestBuilder<T>: RequestBuilder<T> {
 
     }
 
-    private func processRequest(request: Request, _ managerId: String, _ completion: (response: Response<T>?, erorr: ErrorType?) -> Void) {
+    fileprivate func processRequest(_ request: Request, _ managerId: String, _ completion: @escaping (_ response: Response<T>?, _ erorr: Error?) -> Void) {
         if let credential = self.credential {
             request.authenticate(usingCredential: credential)
         }
@@ -102,7 +102,7 @@ class AlamofireRequestBuilder<T>: RequestBuilder<T> {
         }
     }
 
-    private func buildHeaders() -> [String: AnyObject] {
+    fileprivate func buildHeaders() -> [String: AnyObject] {
         var httpHeaders = Manager.defaultHTTPHeaders
         for (key, value) in self.headers {
             httpHeaders[key] = value

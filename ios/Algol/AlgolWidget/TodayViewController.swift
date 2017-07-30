@@ -32,7 +32,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         toggleRefreshAnimation(true)
         getData()
-        self.preferredContentSize = CGSizeMake(0, 248);
+        self.preferredContentSize = CGSize(width: 0, height: 248);
         // Do any additional setup after loading the view from its nib.
         print("widget view did load")
     }
@@ -43,13 +43,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func startLoading() {
-        temperatureLabel?.hidden = true
-        print("\(temperatureLabel.hidden)")
-        humidityLabel?.hidden = true
-        dustLabel?.hidden = true
-        imgWater?.hidden = true
-        imgTemperature?.hidden = true
-        imgDust?.hidden = true
+        temperatureLabel?.isHidden = true
+        print("\(temperatureLabel.isHidden)")
+        humidityLabel?.isHidden = true
+        dustLabel?.isHidden = true
+        imgWater?.isHidden = true
+        imgTemperature?.isHidden = true
+        imgDust?.isHidden = true
         
         loadingWater?.startAnimating()
         loadingTemperature?.startAnimating()
@@ -58,12 +58,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func stopLoading() {
-        temperatureLabel?.hidden = false
-        humidityLabel?.hidden = false
-        dustLabel?.hidden = false
-        imgWater?.hidden = false
-        imgTemperature?.hidden = false
-        imgDust?.hidden = false
+        temperatureLabel?.isHidden = false
+        humidityLabel?.isHidden = false
+        dustLabel?.isHidden = false
+        imgWater?.isHidden = false
+        imgTemperature?.isHidden = false
+        imgDust?.isHidden = false
         
         loadingWater?.stopAnimating()
         loadingTemperature?.stopAnimating()
@@ -71,23 +71,23 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         print("Stop Loading")
     }
     
-    func toggleRefreshAnimation(on: Bool) {
+    func toggleRefreshAnimation(_ on: Bool) {
         if on {
             startLoading()
         } else {
             let delta: Int64 = 1 * Int64(NSEC_PER_SEC)
-            let time = dispatch_time(DISPATCH_TIME_NOW, delta)
+            let time = DispatchTime.now() + Double(delta) / Double(NSEC_PER_SEC)
             
-            dispatch_after(time, dispatch_get_main_queue(), {
+            DispatchQueue.main.asyncAfter(deadline: time, execute: {
                 self.stopLoading()
             });
         }
     }
     
-    func getData(completionHandler: ((NCUpdateResult) -> Void)?=nil) {
+    func getData(_ completionHandler: ((NCUpdateResult) -> Void)?=nil) {
         print("START: WeatherViewController.getData")
-        let _now: NSDate = NSDate()
-        let now: NSDate = _now.dateByAddingTimeInterval(60 * 60 * 9)
+        let _now: Date = Date()
+        let now: Date = _now.addingTimeInterval(60 * 60 * 9)
         print(now)
         dateLabel!.text = "TODAY, \(now)"
         let queue = TaskQueue()
@@ -116,7 +116,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         queue.run()
     }
     
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
+    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         
         print("widgetPerformUpdateWithCompletionHandler")
         // Perform any setup necessary in order to update the view.
@@ -130,14 +130,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     }
 
-    @IBAction func btnRefresh(sender: AnyObject) {
+    @IBAction func btnRefresh(_ sender: AnyObject) {
         toggleRefreshAnimation(true)
         getData()
     }
     
     // Layout
-    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
-        return UIEdgeInsetsZero
+    func widgetMarginInsets(forProposedMarginInsets defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
     }
     
 }

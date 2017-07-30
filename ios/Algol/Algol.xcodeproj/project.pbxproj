@@ -376,12 +376,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 070658A21BF22B9100582C8E /* Build configuration list for PBXNativeTarget "AlgolWidget" */;
 			buildPhases = (
-				A88A28DDB0DD9C76F0C485E9 /* Check Pods Manifest.lock */,
+				A88A28DDB0DD9C76F0C485E9 /* [CP] Check Pods Manifest.lock */,
 				0706588F1BF22B9000582C8E /* Sources */,
 				070658901BF22B9000582C8E /* Frameworks */,
 				070658911BF22B9000582C8E /* Resources */,
-				01C8317ACABE6C5423DA9E3B /* Embed Pods Frameworks */,
-				42FA049BA06D166F48637752 /* Copy Pods Resources */,
+				42FA049BA06D166F48637752 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -396,12 +395,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07A002521BEF0EFF002E687F /* Build configuration list for PBXNativeTarget "Algol" */;
 			buildPhases = (
-				678D64CE0EC2A9BADCBB6EE8 /* Check Pods Manifest.lock */,
+				678D64CE0EC2A9BADCBB6EE8 /* [CP] Check Pods Manifest.lock */,
 				07A002231BEF0EFF002E687F /* Sources */,
 				07A002241BEF0EFF002E687F /* Frameworks */,
 				07A002251BEF0EFF002E687F /* Resources */,
-				4C996D68D097B8CE57FDF0A2 /* Embed Pods Frameworks */,
-				A747F02C46F77D6F1407094D /* Copy Pods Resources */,
+				4C996D68D097B8CE57FDF0A2 /* [CP] Embed Pods Frameworks */,
+				A747F02C46F77D6F1407094D /* [CP] Copy Pods Resources */,
 				070658A31BF22B9100582C8E /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -418,12 +417,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07A002551BEF0EFF002E687F /* Build configuration list for PBXNativeTarget "AlgolTests" */;
 			buildPhases = (
-				DA6CB5C68E186ACEDF349B2F /* Check Pods Manifest.lock */,
+				DA6CB5C68E186ACEDF349B2F /* [CP] Check Pods Manifest.lock */,
 				07A0023A1BEF0EFF002E687F /* Sources */,
 				07A0023B1BEF0EFF002E687F /* Frameworks */,
 				07A0023C1BEF0EFF002E687F /* Resources */,
-				CF2A50F8416F48D77188C247 /* Embed Pods Frameworks */,
-				88EF4594D09FEA5EC03479D6 /* Copy Pods Resources */,
+				CF2A50F8416F48D77188C247 /* [CP] Embed Pods Frameworks */,
+				88EF4594D09FEA5EC03479D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,11 +438,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07A002581BEF0EFF002E687F /* Build configuration list for PBXNativeTarget "AlgolUITests" */;
 			buildPhases = (
-				0CD0427DFF13ED29A2F43FEB /* Check Pods Manifest.lock */,
+				0CD0427DFF13ED29A2F43FEB /* [CP] Check Pods Manifest.lock */,
 				07A002451BEF0EFF002E687F /* Sources */,
 				07A002461BEF0EFF002E687F /* Frameworks */,
 				07A002471BEF0EFF002E687F /* Resources */,
-				BB5BD9C13987331C3044149A /* Copy Pods Resources */,
+				BB5BD9C13987331C3044149A /* [CP] Copy Pods Resources */,
+				F4D4F64AB7C8CC56E790B2A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,6 +468,7 @@
 					070658921BF22B9000582C8E = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 2J68N46PJ7;
+						LastSwiftMigration = 0830;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -477,6 +478,7 @@
 					07A002261BEF0EFF002E687F = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 2J68N46PJ7;
+						LastSwiftMigration = 0830;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -485,10 +487,12 @@
 					};
 					07A0023D1BEF0EFF002E687F = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 07A002261BEF0EFF002E687F;
 					};
 					07A002481BEF0EFF002E687F = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 07A002261BEF0EFF002E687F;
 					};
 				};
@@ -552,44 +556,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01C8317ACABE6C5423DA9E3B /* Embed Pods Frameworks */ = {
+		0CD0427DFF13ED29A2F43FEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolWidget/Pods-AlgolWidget-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		0CD0427DFF13ED29A2F43FEB /* Check Pods Manifest.lock */ = {
+		42FA049BA06D166F48637752 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		42FA049BA06D166F48637752 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,14 +586,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolWidget/Pods-AlgolWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4C996D68D097B8CE57FDF0A2 /* Embed Pods Frameworks */ = {
+		4C996D68D097B8CE57FDF0A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,29 +601,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algol/Pods-Algol-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		678D64CE0EC2A9BADCBB6EE8 /* Check Pods Manifest.lock */ = {
+		678D64CE0EC2A9BADCBB6EE8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		88EF4594D09FEA5EC03479D6 /* Copy Pods Resources */ = {
+		88EF4594D09FEA5EC03479D6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,14 +631,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolTests/Pods-AlgolTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A747F02C46F77D6F1407094D /* Copy Pods Resources */ = {
+		A747F02C46F77D6F1407094D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,29 +646,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algol/Pods-Algol-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A88A28DDB0DD9C76F0C485E9 /* Check Pods Manifest.lock */ = {
+		A88A28DDB0DD9C76F0C485E9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BB5BD9C13987331C3044149A /* Copy Pods Resources */ = {
+		BB5BD9C13987331C3044149A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,14 +676,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF2A50F8416F48D77188C247 /* Embed Pods Frameworks */ = {
+		CF2A50F8416F48D77188C247 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,19 +691,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolTests/Pods-AlgolTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DA6CB5C68E186ACEDF349B2F /* Check Pods Manifest.lock */ = {
+		DA6CB5C68E186ACEDF349B2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D4F64AB7C8CC56E790B2A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgolUITests/Pods-AlgolUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -856,6 +860,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -876,6 +881,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -970,6 +976,7 @@
 				CODE_SIGN_ENTITLEMENTS = Algol/Algol.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2J68N46PJ7;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -981,6 +988,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -994,6 +1002,7 @@
 				CODE_SIGN_ENTITLEMENTS = Algol/Algol.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2J68N46PJ7;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1005,6 +1014,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.Algol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1022,6 +1032,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.AlgolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algol.app/Algol";
 			};
 			name = Debug;
@@ -1039,6 +1050,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.AlgolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algol.app/Algol";
 			};
 			name = Release;
@@ -1051,6 +1063,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.AlgolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Algol;
 				USES_XCTRUNNER = YES;
 			};
@@ -1064,6 +1077,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jnw.AlgolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Algol;
 				USES_XCTRUNNER = YES;
 			};

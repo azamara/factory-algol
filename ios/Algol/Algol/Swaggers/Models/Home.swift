@@ -8,20 +8,20 @@
 import Foundation
 
 
-public class Home: JSONEncodable {
+open class Home: JSONEncodable {
 
     /** Unique identifier */
-    public var home_id: Double?
+    open var home_id: Double?
     /** Humidity of home. */
-    public var humidity: Double?
+    open var humidity: Double?
     /** Temperature of home. */
-    public var temperature: Double?
+    open var temperature: Double?
     /** Noise of home. */
-    public var sound: Double?
+    open var sound: Double?
     /** Vibration of home. */
-    public var vibration: Double?
+    open var vibration: Double?
     /** Dust of home. */
-    public var dust: Double?
+    open var dust: Double?
     
 
     public init() {}
@@ -29,13 +29,13 @@ public class Home: JSONEncodable {
     // MARK: JSONEncodable
     func encodeToJSON() -> AnyObject {
         var nillableDictionary = [String:AnyObject?]()
-        nillableDictionary["home_id"] = self.home_id
-        nillableDictionary["humidity"] = self.humidity
-        nillableDictionary["temperature"] = self.temperature
-        nillableDictionary["sound"] = self.sound
-        nillableDictionary["vibration"] = self.vibration
-        nillableDictionary["dust"] = self.dust
+        nillableDictionary["home_id"] = self.home_id as AnyObject
+        nillableDictionary["humidity"] = self.humidity as AnyObject
+        nillableDictionary["temperature"] = self.temperature as AnyObject
+        nillableDictionary["sound"] = self.sound as AnyObject
+        nillableDictionary["vibration"] = self.vibration as AnyObject
+        nillableDictionary["dust"] = self.dust as AnyObject
         let dictionary: [String:AnyObject] = APIHelper.rejectNil(nillableDictionary) ?? [:]
-        return dictionary
+        return dictionary as AnyObject
     }
 }

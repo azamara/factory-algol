@@ -5,7 +5,7 @@
 //
 
 class APIHelper {
-    static func rejectNil(source: [String:AnyObject?]) -> [String:AnyObject]? {
+    static func rejectNil(_ source: [String:AnyObject?]) -> [String:AnyObject]? {
         var destination = [String:AnyObject]()
         for (key, nillableValue) in source {
             if let value: AnyObject = nillableValue {
