@@ -8,6 +8,9 @@
   ],
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "connect": "^3.2.0",
     "mongoose": "^4.2.4",
